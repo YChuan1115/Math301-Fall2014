@@ -11,7 +11,7 @@ Math 301: Abstract Algebra I -- Fall 2014
 
 **Lecture time/location:** MWF 11:00--11:50pm in Carver 196.
 
-**Course Webpage:** http://github.com/williamdemeo/Math301Fall2014 (this page!)
+**Course Webpage:** http://github.com/williamdemeo/Math301-Fall2014 (this page!)
 
 -----------------------------------------------------------------------
 - [Prerequisites](#prerequisites)
@@ -140,7 +140,7 @@ You are welcome to ask lots of questions in this class (during lecture, in
 office hours, via email, etc.).  You are especially encouraged to use a public 
 forum to ask questions so that all students can benefit.
 Please consider posting to the
-[class wiki pages](https://github.com/williamdemeo/Math301Fall2014/wiki)
+[class wiki pages](https://github.com/williamdemeo/Math301-Fall2014/wiki)
 when you want to ask a question, or raise an issue, or start an online dialog
 with the prof and/or your classmates. If you have any trouble editing
 the class wiki pages, please [notify the professor](mailto:williamdemeo@gmail.com).
