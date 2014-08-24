@@ -87,8 +87,7 @@ Exams
 -----
 
 A **Midterm Exam worth 20%** of the course grade will be scheduled soon after
-the course begins, and notice of at least two weeks will be given prior to the
-date of a test.
+the course begins.
 
 + Midterm Date: TBA
 
