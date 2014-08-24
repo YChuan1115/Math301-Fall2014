@@ -86,18 +86,17 @@ should collect them as they are useful when preparing for exams.
 Exams
 -----
 
-A **Midterm Exam worth 20%** of the course grade will be scheduled soon after
-the course begins.
+The **Midterm Exam is worth 20%** of the course grade.  The date will be
+announced soon after the course begins.
 
 + Midterm Date: TBA
 
-A **Final Exam worth 30%** of the course grade will be given at the end
-of the semester. 
+The **Final Exam is worth 30%** of the course grade.
+In accordance with university policy, the final exam must be taken by all
+students at the scheduled time. *There are no make-up exams.*
 
 + Final Exam Date: **Monday, December 15, 9:45--11:45am** in Carver 196
 
-In accordance with university policy, the final exam must be taken by all
-students at the scheduled time. *There are no make-up exams.*
 
 
 Computing
