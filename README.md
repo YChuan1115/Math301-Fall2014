@@ -33,7 +33,7 @@ The most important prerequisite for this class is Math 201.  If you did well in
 Math 201, you can probably do well in this course.  Although you are not
 expected to be skilled at constructing your own original proofs upon entering
 this course, you should be familiar with some basic methods of proof, such as
-proof by induction and contraposition.
+induction.
 
 During the first few lectures, we will review some of the required background.
 If this early material seems unfamiliar and difficult to you, this might
