@@ -1,0 +1,191 @@
+Math 301: Abstract Algebra I -- Fall 2014
+=========================================
+
+**Instructor:** William DeMeo  
+**Email:** williamdemeo@gmail.com  
+**Office:** Carver, Room 466  
+**Office hours:**
+  + Tuesdays 4--5pm,  
+  + Wednesdays and Fridays 10--11am,  
+  + and by appointment.
+
+**Lecture time/location:** MWF 11:00--11:50pm in Carver 196.
+
+**Course Webpage:** http://github.com/williamdemeo/Math301Fall2014 (this page!)
+
+-----------------------------------------------------------------------
+- [Prerequisites](#prerequisites)
+- [Overview](#overview)
+- [Textbook](#textbook)
+- [Homework](#homework)
+- [Exams](#exams)
+- [Computing](#computing)
+- [Questions and Online Discussions](#questions-and-online-discussions)
+- [Other references](#other-references)
+
+
+Prerequisites
+-------------
++ Math 166 or Math 166H  
++ Math 317 or Math 407  
++ Math 201 with a grade of C- or better  
+The most important prerequisite for this class is Math 201.  If you did well in
+Math 201, you can probably do well in this course.  Although you are not
+expected to be skilled at constructing your own original proofs upon entering
+this course, you should be familiar with some basic methods of proof, such as
+proof by induction and contraposition.
+
+During the first few lectures, we will review some of the required background.
+If this early material seems unfamiliar and difficult to you, this might
+indicate that you will find the course very challenging.
+
+
+Overview
+--------
+Basic theory of groups and other algebraic structures, with an emphasis on writing proofs.  
++ Elementary theory of groups: subgroups, cyclic groups, permutation groups, cosets.  
++ Brief introduction to lattices.  
++ Isomorphisms, quotient groups, homomorphisms; group isomorphism theorems.  
++ Group actions, Sylow theorems.  
++ Introduction to rings. 
+
+
+Textbook
+--------
+
+<a href="http://abstract.ups.edu/"><IMG border="0" src="content/images/Judson.jpeg" height="250">  
+[Abstract Algebra: theory and applications](http://abstract.ups.edu/)
+by Tom Judson
+
+See also the [other references](#other-references) below.
+
+
+Homework
+--------
+**Homework is worth 50%** of the course grade and will be assigned roughly once
+per week. Thus, students must solve many homework problems in order to do well
+in the course.
+
+Homework is announced in lecture approximately once per week, and is
+usually due the week after it is announced (with exact due dates specified
+in lecture).
+
+I will do my best to keep this webpage updated with a list of the problems that
+are due each week, but it is the students' responsibility to show up for lecture
+to stay current with the course agenda.  
+
+Although many homework problems will be assigned, only a limited number from
+each assignment will be graded.  Therefore,
+[solutions to most homework problems](content/homework) will
+be made available, with the expectation that students will read the correct
+solutions, compare them with their own, and make whatever corrections are
+necessary.  Students are not required to turn in corrected solutions, but
+should collect them as they are useful when preparing for exams.
+
+
+Exams
+-----
+
+A **Midterm Exam worth 20%** of the course grade will be scheduled soon after
+the course begins, and notice of at least two weeks will be given prior to the
+date of a test.
+
++ Midterm Date: TBA
+
+A **Final Exam worth 30%** of the course grade will be given at the end
+of the semester. 
+
++ Final Exam Date: **Monday, December 15, 9:45--11:45am** in Carver 196
+
+In accordance with university policy, the final exam must be taken by all
+students at the scheduled time. *There are no make-up exams.*
+
+
+Computing
+---------
+
+No prior programming experience is required for this course, and the amount of
+computing done in this class will be left up to the students.  I encourage, but
+do not require, all students to use the computer to help develop intuition about
+the algebraic structures that we will study, and I will provide some guidance in
+this regard.
+
+**Sage:**
+One of the best ways to develop a deeper understanding of many mathematical
+subjects (abstract algebra in particular) is to use the computer to experiment
+with and apply the theory.  For this purpose I recommend the open source math
+software called [Sage](http://www.sagemath.org).  Sage essentially provides a
+nice browser-based interface to a [vast array][] of well developed and powerful
+open source mathematical software.
+
+Getting started with Sage is extremely easy.  You don't even need to install any
+software. By using Sage though a web browser you can and do all your computing,
+and store all your sage worksheets, in the cloud.
+
+It's also possible to download and install Sage on your own computer.  Sage is free
+and open source, and it is typically not *too* hard to install. 
+
+If you've used Sage before and just need a quick refresher, you might
+check out the [Sage Quick Start Guides](http://www.sagemath.org/doc/prep/quickstart.html).  
+
+If you are new to Sage, consider trying the following:
+
+1. Go to http://www.sagemath.org/ and click [Try Sage Online](http://cloud.sagemath.com/).  
+2. [Getting started using Sage](http://www.sagemath.org/doc/prep/Logging-On.html) explains how to create an account.  
+3. Check out the [Sage Thematic Tutorials](http://www.sagemath.org/doc/thematic_tutorials/index.html)
+
+Questions and Online Discussions
+--------------------------------
+You are welcome to ask lots of questions in this class (during lecture, in
+office hours, via email, etc.).  You are especially encouraged to use a public 
+forum to ask questions so that all students can benefit.
+Please consider posting to the
+[class wiki pages](https://github.com/williamdemeo/Math301Fall2014/wiki)
+when you want to ask a question, or raise an issue, or start an online dialog
+with the prof and/or your classmates. If you have any trouble editing
+the class wiki pages, please [notify the professor](mailto:williamdemeo@gmail.com).
+
+
+Other References
+----------------
+[Our textbook](http://abstract.ups.edu/) should cover everything we need for
+this course.  However, there are many other books that provide alternative
+expositions of the same topics, and some are particularly good and might be
+worth a look.  Here are a few of your professor's favorites, along with some
+comments about them:
+
+<!-- Herstein -->
+<a href="http://click.linksynergy.com/fs-bin/click?id=xEro7OMQWE4&offerid=229293.146&subid=0&type=4"><IMG border="0"  src="content/images/Herstein.jpeg" height="250"></a>
+
+**Herstein**, *Topics in Algebra* -- covers roughly the same material as our
+textbook, but at a slightly higher level of sophistication; used, for example,
+in an undergraduate honors abstract algebra course.
+
+<!-- Jacobson -->
+<a href="http://click.linksynergy.com/fs-bin/click?id=xEro7OMQWE4&offerid=229293.146&subid=0&type=4"><IMG border="0"  src="content/images/Jacobson.jpeg" height="250"></a>
+
+**Jacobson**, *Basic Algebra I* -- covers roughly the same material as our textbook,
+but at a higher level of sophistication; used, for example, as a textbook for
+advanced undergraduates and beginning graduate students.
+
+<!-- Rose -->
+<a href="http://click.linksynergy.com/fs-bin/click?id=xEro7OMQWE4&offerid=229293.146&subid=0&type=4"><IMG border="0"  src="content/images/Rose.jpeg" height="250"></a>
+
+**Rose**, *A Course on Group Theory* -- We will spend a significant portion of our
+time in this class studying *group theory*, and this book is an excellent
+(and inexpensive) introduction to the subject. Our textbook provides a
+sufficient treatment of group theory for our purposes, and Rose covers much more
+than we will. However, you might find Rose's book useful if/when you are not
+satisfied with our textbook's (or professor's) presentation of a particular topic. 
+
+<!-- Dixon -->
+<a href="http://click.linksynergy.com/fs-bin/click?id=xEro7OMQWE4&offerid=229293.146&subid=0&type=4"><IMG border="0"  src="content/images/Dixon.jpeg" height="250"></a>
+
+**Dixon**, *Problems in Group Theory* -- our homework assignments should give you
+plenty of practice solving problems in group theory; if you want more, I highly
+recommend the book by Dixon. 
+
+-----------------------
+
+
+[vast array]: http://en.wikipedia.org/wiki/Sage_(mathematics_software)#Software_packages_contained_in_Sage
