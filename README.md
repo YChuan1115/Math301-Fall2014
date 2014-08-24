@@ -62,7 +62,7 @@ See also the [other references](#other-references) below.
 
 Homework
 --------
-**Homework is worth 50%** of the course grade and will be assigned roughly once
+**Homework is worth 30%** of the course grade and will be assigned roughly once
 per week. Thus, students must solve many homework problems in order to do well
 in the course.
 
@@ -86,10 +86,10 @@ should collect them as they are useful when preparing for exams.
 Exams
 -----
 
-The **Midterm Exam is worth 20%** of the course grade.  The date will be
-announced soon after the course begins.
+**Two Midterm Exams each worth 20%** of the course grade will be given during the
+  semester; the exact dates will be announced soon after the course begins.
 
-+ Midterm Date: TBA
++ Midterm Dates: TBA
 
 The **Final Exam is worth 30%** of the course grade.
 In accordance with university policy, the final exam must be taken by all
