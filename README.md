@@ -2,7 +2,7 @@ Math 301: Abstract Algebra I -- Fall 2014
 =========================================
 
 **Instructor:** William DeMeo  
-**Email:** williamdemeo@gmail.com  
+**Email:** [williamdemeo@gmail.com](mailto:williamdemeo@gmail.com)  
 **Office:** Carver, Room 466  
 **Office hours:**
   + Tuesdays 4--5pm,  
@@ -12,6 +12,28 @@ Math 301: Abstract Algebra I -- Fall 2014
 **Lecture time/location:** MWF 11:00--11:50pm in Carver 196.
 
 **Course Webpage:** http://github.com/williamdemeo/Math301-Fall2014 (this page!)
+
+You are now reading the main course webpage (which is simply a README.md
+file in a GitHub repository called Math301-Fall2014).  If you don't know what
+the stuff in parentheses means, don't worry. It will be explained at our first
+class meeting. 
+
+The paragraphs below serve as the syllabus for Section B of Math 301.
+
+*This page, as well as the content directory above, and its subdirectories, will
+ be updated throughout the semester, and students are expected to visit this
+ page routinely.* 
+
+Please bookmark this page or, better yet,
+<a href="mailto:?subject=MATH 301 webpage&amp;body=The Math 301 webpage is
+ http://github.com/williamdemeo/Math301-Fall2014">email the url of this
+ page to yourself!
+ <img src="http://png-2.findicons.com/files/icons/573/must_have/48/mail.png"/></a>
+
+The ISU Blackboard system will also be used, but only in a very limited
+way---namely, for recording test scores and making them available to students.
+
+
 
 -----------------------------------------------------------------------
 - [Prerequisites](#prerequisites)
