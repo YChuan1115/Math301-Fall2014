@@ -20,7 +20,7 @@ class meeting.
 
 The paragraphs below serve as the syllabus for Section B of Math 301.
 
-*This page, as well as the content directory above, and its subdirectories, will
+*This page and the subdirectories of this repository (see links above) will
  be updated throughout the semester, and students are expected to visit this
  page routinely.* 
 
@@ -72,7 +72,7 @@ Basic theory of groups and other algebraic structures, with an emphasis on writi
 Textbook
 --------
 
-<a href="http://abstract.ups.edu/"><IMG border="0" src="content/images/Judson.jpeg" height="250">  
+<a href="http://abstract.ups.edu/"><IMG border="0" src="misc/images/Judson.jpeg" height="250">  
 [Abstract Algebra: theory and applications](http://abstract.ups.edu/)
 by Tom Judson
 
@@ -172,21 +172,21 @@ worth a look.  Here are a few of your professor's favorites, along with some
 comments about them:
 
 <!-- Herstein -->
-<a href="http://click.linksynergy.com/fs-bin/click?id=xEro7OMQWE4&offerid=229293.146&subid=0&type=4"><IMG border="0"  src="content/images/Herstein.jpeg" height="250"></a>
+<a href="http://click.linksynergy.com/fs-bin/click?id=xEro7OMQWE4&offerid=229293.146&subid=0&type=4"><IMG border="0"  src="misc/images/Herstein.jpeg" height="250"></a>
 
 **Herstein**, *Topics in Algebra* -- covers roughly the same material as our
 textbook, but at a slightly higher level of sophistication; used, for example,
 in an undergraduate honors abstract algebra course.
 
 <!-- Jacobson -->
-<a href="http://click.linksynergy.com/fs-bin/click?id=xEro7OMQWE4&offerid=229293.146&subid=0&type=4"><IMG border="0"  src="content/images/Jacobson.jpeg" height="250"></a>
+<a href="http://click.linksynergy.com/fs-bin/click?id=xEro7OMQWE4&offerid=229293.146&subid=0&type=4"><IMG border="0"  src="misc/images/Jacobson.jpeg" height="250"></a>
 
 **Jacobson**, *Basic Algebra I* -- covers roughly the same material as our textbook,
 but at a higher level of sophistication; used, for example, as a textbook for
 advanced undergraduates and beginning graduate students.
 
 <!-- Rose -->
-<a href="http://click.linksynergy.com/fs-bin/click?id=xEro7OMQWE4&offerid=229293.146&subid=0&type=4"><IMG border="0"  src="content/images/Rose.jpeg" height="250"></a>
+<a href="http://click.linksynergy.com/fs-bin/click?id=xEro7OMQWE4&offerid=229293.146&subid=0&type=4"><IMG border="0"  src="misc/images/Rose.jpeg" height="250"></a>
 
 **Rose**, *A Course on Group Theory* -- We will spend a significant portion of our
 time in this class studying *group theory*, and this book is an excellent
@@ -196,7 +196,7 @@ than we will. However, you might find Rose's book useful if/when you are not
 satisfied with our textbook's (or professor's) presentation of a particular topic. 
 
 <!-- Dixon -->
-<a href="http://click.linksynergy.com/fs-bin/click?id=xEro7OMQWE4&offerid=229293.146&subid=0&type=4"><IMG border="0"  src="content/images/Dixon.jpeg" height="250"></a>
+<a href="http://click.linksynergy.com/fs-bin/click?id=xEro7OMQWE4&offerid=229293.146&subid=0&type=4"><IMG border="0"  src="misc/images/Dixon.jpeg" height="250"></a>
 
 **Dixon**, *Problems in Group Theory* -- our homework assignments should give you
 plenty of practice solving problems in group theory; if you want more, I highly
