@@ -1,0 +1,281 @@
+%%%%(c)
+%%%%(c)  This file is a portion of the source for the textbook
+%%%%(c)
+%%%%(c)    Abstract Algebra: Theory and Applications
+%%%%(c)    Copyright 1997 by Thomas W. Judson
+%%%%(c)
+%%%%(c)  See the file COPYING.txt for copying conditions
+%%%%(c)
+%%%%(c)
+ 
+\markright{EXERCISES}
+\section*{Exercises}
+\exrule
+ 
+{\small
+\begin{enumerate}
+
+% 1
+\item
+Suppose that
+\begin{align*}
+A & = \{ x : x \in \mathbb N \text{ and } x \text{ is even} \}, \\
+B & = \{x : x \in \mathbb N \text{ and } x \text{ is prime}\}, \\
+C & = \{ x : x \in \mathbb N \text{ and } x \text{ is a multiple of 5}\}.
+\end{align*}
+Describe each of the following sets. 
+\begin{multicols}{2}
+\begin{enumerate}
+
+\item
+$A \cap B$
+
+\item
+$B \cap C$
+
+\item
+$A \cup B$
+
+\item
+$A \cap (B \cup C)$
+
+\end{enumerate}
+\end{multicols}
+ 
+% 2
+\item
+If $A = \{ a, b, c \}$, $B = \{ 1, 2, 3 \}$, $C = \{ x \}$, and $D = \emptyset$, list all of the elements in each of the following sets. 
+\begin{multicols}{2}
+\begin{enumerate}
+
+\item
+$A \times B$
+
+\item
+$B \times A$
+
+\item
+$A \times B \times C$
+
+\item
+$A \times D$
+
+\end{enumerate}
+\end{multicols}
+  
+% 3
+\item
+Find an example of two nonempty sets $A$ and $B$ for which $A \times B = B \times A$ is true. 
+
+% 4  
+\item
+Prove $A \cup \emptyset = A$ and $A \cap \emptyset = \emptyset$.
+ 
+% 5
+\item
+Prove $A \cup B = B \cup A$ and $A \cap B = B \cap A$.
+ 
+% 6
+\item
+Prove $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$.
+ 
+% 7
+\item
+Prove $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$.
+ 
+% 8
+\item
+Prove  $A \subset B$ if and only if $A \cap B = A$.
+ 
+% 9
+\item
+Prove $(A \cap B)' = A' \cup B'$.
+
+% 10
+\item
+Prove  $A \cup B = (A \cap B) \cup (A \setminus B) \cup (B \setminus A)$. 
+ 
+% 11
+\item
+Prove  $(A \cup B) \times C = (A \times C ) \cup (B \times C)$.
+ 
+% 12
+\item
+Prove  $(A \cap B) \setminus B = \emptyset$.
+ 
+% 13
+\item
+Prove  $(A \cup B) \setminus B = A \setminus B$.
+ 
+% 14
+\item
+Prove  $A \setminus (B \cup C) = (A \setminus B) \cap (A \setminus C)$. 
+
+% 15
+\item
+Prove  $A \cap (B \setminus C) = (A \cap B) \setminus (A \cap C)$. 
+ 
+ 
+%% TWJ, 2010/03/31
+%% Fixed the error in the exercise
+% 16
+\item
+Prove  $(A \setminus B) \cup (B \setminus A) = (A \cup B) \setminus (A \cap B)$. 
+ 
+% 17
+\item
+Which of the following relations $f: {\mathbb Q} \rightarrow {\mathbb Q}$
+define a mapping? In each case, supply a reason why $f$ is or is not a
+mapping. 
+\begin{multicols}{2}
+\begin{enumerate}
+
+\item 
+$\displaystyle f(p/q) = \frac{p+ 1}{p - 2}$
+
+\item 
+$\displaystyle f(p/q) = \frac{3p}{3q}$
+
+\item 
+$\displaystyle f(p/q) = \frac{p+q}{q^2}$
+
+\item 
+$\displaystyle f(p/q) = \frac{3 p^2}{7 q^2} - \frac{p}{q}$
+
+\end{enumerate}
+\end{multicols}
+ 
+% 18
+\item
+Determine which of the following functions are one-to-one and which are onto.  If the function is not onto, determine its range.
+\begin{enumerate} 
+ 
+\item
+$f: {\mathbb R} \rightarrow {\mathbb R}$ defined by $f(x) = e^x$
+ 
+\item
+$f: {\mathbb Z} \rightarrow {\mathbb Z}$ defined by $f(n) = n^2 + 3$
+  
+\item
+$f: {\mathbb R} \rightarrow {\mathbb R}$ defined by $f(x) = \sin x$
+ 
+\item
+$f: {\mathbb Z} \rightarrow {\mathbb Z}$ defined by $f(x) = x^2$
+ 
+\end{enumerate}
+ 
+% 19
+\item
+Let $f :A \rightarrow B$ and $g : B \rightarrow C$ be invertible mappings; that is, mappings such that $f^{-1}$ and $g^{-1}$ exist.  Show that $(g \circ f)^{-1} =f^{-1} \circ g^{-1}$. 
+
+% 20
+\item
+\begin{enumerate}
+  
+\item
+Define a function $f: {\mathbb N} \rightarrow {\mathbb N}$ that is one-to-one but not onto. 
+ 
+\item
+Define a function $f: {\mathbb N} \rightarrow {\mathbb N}$ that is onto but not one-to-one. 
+ 
+\end{enumerate}
+ 
+% 21
+\item
+Prove the relation defined on ${\mathbb R}^2$ by $(x_1, y_1 ) \sim (x_2, y_2)$ if $x_1^2 + y_1^2 = x_2^2 + y_2^2$ is  an equivalence relation. 
+ 
+% 22
+\item
+Let $f : A \rightarrow B$ and $g : B \rightarrow C$ be maps.
+\begin{enumerate}
+ 
+\item
+If $f$ and $g$ are both one-to-one functions, show that $g \circ f$
+is one-to-one. 
+ 
+\item
+If $g \circ f$ is onto, show that $g$ is onto.
+ 
+\item
+If $g \circ f$ is one-to-one, show that $f$ is one-to-one.
+ 
+\item
+If $g \circ f$ is one-to-one and $f$ is onto, show that $g$ is
+one-to-one.
+ 
+\item
+If $g \circ f$ is onto and $g$ is one-to-one, show that $f$ is onto.
+ 
+\end{enumerate}
+ 
+% 23
+\item
+Define a function on the real numbers by
+\[
+f(x) = \frac{x + 1}{x - 1}.
+\]
+What are the domain and range of $f$? What is the inverse of $f$?  Compute $f \circ f^{-1}$ and $f^{-1} \circ f$. 
+ 
+% 24
+\item
+Let $f: X \rightarrow Y$ be a map with $A_1, A_2 \subset X$ and $B_1, B_2 \subset Y$. 
+\begin{enumerate}
+ 
+\item
+Prove $f( A_1 \cup A_2 ) = f( A_1) \cup f( A_2 )$.
+ 
+\item
+Prove $f( A_1 \cap A_2 ) \subset f( A_1) \cap f( A_2 )$.  Give an example in which equality fails.
+ 
+\item
+Prove $f^{-1}( B_1 \cup B_2 ) = f^{-1}( B_1) \cup f^{-1}(B_2 )$, where
+\[
+f^{-1}(B) = \{ x \in X : f(x) \in B \}.
+\]
+ 
+\item
+Prove $f^{-1}( B_1 \cap B_2 ) = f^{-1}( B_1) \cap f^{-1}( B_2 )$. 
+ 
+\item
+Prove $f^{-1}( Y \setminus B_1 ) = X \setminus f^{-1}( B_1)$.
+ 
+\end{enumerate}
+ 
+% 25
+\item
+Determine whether or not the following relations are equivalence relations on the given set.  If the relation is an equivalence relation, describe the partition given by it.  If the relation is not an equivalence relation, state why it fails to be one.
+\begin{multicols}{2}
+\begin{enumerate}
+ 
+\item
+$x \sim y$ in ${\mathbb R}$ if $x \geq y$
+ 
+\item
+$m \sim n$ in ${\mathbb Z}$ if $mn > 0$
+ 
+\item
+$x \sim y$ in ${\mathbb R}$ if $|x - y| \leq 4$
+ 
+\item
+$m \sim n$ in ${\mathbb Z}$ if $m \equiv n \pmod{6}$
+ 
+\end{enumerate}
+\end{multicols}
+ 
+ 
+\item
+Define a relation $\sim$ on ${\mathbb R}^2$ by stating that $(a, b) \sim (c, d)$ if and only if $a^2 + b^2 \leq c^2 + d^2$. Show that $\sim$ is reflexive and transitive but not symmetric.
+ 
+\item
+Show that an $m \times n$ matrix gives rise to a well-defined  map from ${\mathbb R}^n$ to ${\mathbb R}^m$. 
+ 
+\item
+Find the error in the following argument by providing a counterexample. ``The reflexive property is redundant in the axioms for an equivalence relation.  If $x \sim y$, then $y \sim x$ by the symmetric property.  Using the transitive property, we can deduce that $x \sim x$.'' 
+ 
+\item
+\textbf{Projective Real Line.}
+Define a relation on ${\mathbb R}^2 \setminus  (0,0)$ by letting $(x_1, y_1) \sim (x_2, y_2)$ if there exists a nonzero real number $\lambda$ such that $(x_1, y_1)  = ( \lambda x_2, \lambda y_2)$.  Prove that $\sim$ defines an equivalence relation on ${\mathbb R}^2 \setminus (0,0)$.  What are the corresponding  equivalence classes?  This equivalence relation defines the projective line, denoted by  ${\mathbb P}({\mathbb R} )$, which is very important in geometry.
+ 
+\end{enumerate}
+}
+ 
