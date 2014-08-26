@@ -89,13 +89,13 @@ Homework is announced in lecture approximately once per week, and is
 usually due the week after it is announced (with exact due dates specified
 in lecture).
 
-I will do my best to keep [our homework page](content/homework) updated with
+I will do my best to keep [our homework page](homework) updated with
 a list of the problems that are due each week, but it is the students'
 responsibility to show up for lecture to stay current with the course agenda.  
 
 Although many homework problems will be assigned, only a limited number from
 each assignment will be graded.  Therefore,
-[solutions to most homework problems](content/homework) will
+[solutions to many of the homework problems](homework/solutions) will
 be made available, with the expectation that students will read the correct
 solutions, compare them with their own, and make whatever corrections are
 necessary.  Students are not required to turn in corrected solutions, but
