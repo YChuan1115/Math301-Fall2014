@@ -27,12 +27,9 @@ The paragraphs below serve as the syllabus for Section B of Math 301.
 Please bookmark this page or, better yet,
 <a href="mailto:?subject=MATH 301 webpage&amp;body=The Math 301 webpage is
  http://github.com/williamdemeo/Math301-Fall2014">email the url of this
- page to yourself!
- <img src="http://png-2.findicons.com/files/icons/573/must_have/48/mail.png"/></a>
+ page to yourself!</a>
 
-The ISU Blackboard system will also be used, but only in a very limited
-way---namely, for recording test scores and making them available to students.
-
+For this class the ISU Blackboard system will be used only for recording test scores. 
 
 
 -----------------------------------------------------------------------

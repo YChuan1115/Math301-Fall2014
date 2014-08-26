@@ -1,5 +1,9 @@
 Math 301: Fall 2014 -- Homework
 ===============================
 
-A list of homework problems for Math 301 will be posted here, and solutions
-or other documents relating to the homework will reside in this directory.
+The assigned homework problems for Math 301 will be posted here.
+This list will be updated periodically, but the most authoritative 
+source for homework assignments is the lecture.
+
+1. **Chapter 1:** 1cd, 2bd, 3, 7, 20b, 22cd, 24bcde, 25d. *Due: Friday, 8/29*  
+
