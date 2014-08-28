@@ -5,13 +5,23 @@ Math 301: Abstract Algebra I -- Fall 2014
 **Email:** [williamdemeo@gmail.com](mailto:williamdemeo@gmail.com)  
 **Office:** Carver, Room 466  
 **Office hours:**
-  + Tuesdays 4--5pm,  
-  + Wednesdays and Fridays 10--11am,  
+  + Tuesdays and Wednesdays 2--3pm,  
+  + Fridays 10--11am,  
   + and by appointment.
+
 
 **Lecture time/location:** MWF 11:00--11:50pm in Carver 196.
 
 **Course Webpage:** http://github.com/williamdemeo/Math301-Fall2014 (this page!)
+
+**Some notes about office hours:**  
++ The regularly scheduled office hours are subject to change throughout the semeseter.
++ Students are welcome to drop by my office anytime, even outside of the
+regularly scheduled office hours.
++ It is helpful (but certainly not required) to send me an email in advance to let
+  me know when you plan to visit.
+
+-------------------------------------------
 
 You are now reading the main course webpage (which is simply a README.md
 file in a GitHub repository called Math301-Fall2014).  If you don't know what
