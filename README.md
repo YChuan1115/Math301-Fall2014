@@ -14,10 +14,12 @@ Math 301: Abstract Algebra I -- Fall 2014
 
 **Course Webpage:** http://github.com/williamdemeo/Math301-Fall2014 (this page!)
 
-**Some notes about office hours:**  
-+ The regularly scheduled office hours are subject to change throughout the semeseter.
-+ Students are welcome to drop by my office anytime, even outside of the
-regularly scheduled office hours.
+**Some remarks about office hours:**  
++ The regularly scheduled office hours listed above are subject to change.
+  Changes will be announced during lecture.  
++ Office hours are simply the hours during which I make a point of being
+  available in my office to answer questions.  However, students
+  are welcomed to stop by my office at anytime to check if I'm available.  
 + It is helpful (but certainly not required) to send me an email in advance to let
   me know when you plan to visit.
 
