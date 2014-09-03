@@ -82,10 +82,15 @@ Basic theory of groups and other algebraic structures, with an emphasis on writi
 + Group actions, Sylow theorems.  
 + Introduction to rings. 
 
+Learning Outcomes
+-----------------
+Develop skill in communicating mathematics. Develop competence in writing proofs. 
+Construct proofs about the following mathematical structures and concepts: groups,
+lattices, homomorphisms, quotient groups, group actions, rings.
+
 
 Textbook
 --------
-
 <a href="http://abstract.ups.edu/"><IMG border="0" src="misc/images/Judson.jpeg" height="250">  
 [Abstract Algebra: theory and applications](http://abstract.ups.edu/)
 by Tom Judson
