@@ -49,6 +49,7 @@ For this class the ISU Blackboard system will be used only for recording test sc
 -----------------------------------------------------------------------
 - [Prerequisites](#prerequisites)
 - [Overview](#overview)
+- [Learning Outcomes](#learning-outcomes)
 - [Textbook](#textbook)
 - [Homework](#homework)
 - [Exams](#exams)
