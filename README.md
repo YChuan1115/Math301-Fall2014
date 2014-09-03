@@ -176,6 +176,17 @@ when you want to ask a question, or raise an issue, or start an online dialog
 with the prof and/or your classmates. If you have any trouble editing
 the class wiki pages, please [notify the professor](mailto:williamdemeo@gmail.com).
 
+Disabilities Statement
+----------------------
+If you believe that you have a disability that qualifies under the
+Americans with Disabilities Act and Section 504 of the Rehabilitation
+Act and requires accommodations, you should contact the Student Disability
+Resources Office for information on appropriate policies and procedures. 
+The Disability Resources Office is located in the Student Services
+Building, Room 1076; phone number: 515-294-7220. The next step is to
+see me. I am happy to assist with accommodations, but I will not
+provide them retroactively (so file the appropriate requests and paperwork 
+before the first exam!).
 
 Other References
 ----------------
