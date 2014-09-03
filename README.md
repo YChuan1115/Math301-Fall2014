@@ -12,7 +12,7 @@ Math 301: Abstract Algebra I -- Fall 2014
 
 **Lecture time/location:** MWF 11:00--11:50pm in Carver 196.
 
-**Credits: 3**
+**Credits:** 3
 
 **Course Webpage:** http://github.com/williamdemeo/Math301-Fall2014 (this page!)
 
