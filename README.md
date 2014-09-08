@@ -12,6 +12,8 @@ Math 301: Abstract Algebra I -- Fall 2014
 
 **Lecture time/location:** MWF 11:00--11:50pm in Carver 196.
 
+**Credits:** 3
+
 **Course Webpage:** http://github.com/williamdemeo/Math301-Fall2014 (this page!)
 
 **Some remarks about office hours:**  
@@ -47,6 +49,7 @@ For this class the ISU Blackboard system will be used only for recording test sc
 -----------------------------------------------------------------------
 - [Prerequisites](#prerequisites)
 - [Overview](#overview)
+- [Learning Outcomes](#learning-outcomes)
 - [Textbook](#textbook)
 - [Homework](#homework)
 - [Exams](#exams)
@@ -80,10 +83,15 @@ Basic theory of groups and other algebraic structures, with an emphasis on writi
 + Group actions, Sylow theorems.  
 + Introduction to rings. 
 
+Learning Outcomes
+-----------------
+Develop skill in communicating mathematics. Develop competence in writing proofs. 
+Construct proofs about the following mathematical structures and concepts: groups,
+lattices, homomorphisms, quotient groups, group actions, rings.
+
 
 Textbook
 --------
-
 <a href="http://abstract.ups.edu/"><IMG border="0" src="misc/images/Judson.jpeg" height="250">  
 [Abstract Algebra: theory and applications](http://abstract.ups.edu/)
 by Tom Judson
@@ -177,6 +185,17 @@ when you want to ask a question, or raise an issue, or start an online dialog
 with the prof and/or your classmates. If you have any trouble editing
 the class wiki pages, please [notify the professor](mailto:williamdemeo@gmail.com).
 
+Disabilities Statement
+----------------------
+If you believe that you have a disability that qualifies under the
+Americans with Disabilities Act and Section 504 of the Rehabilitation
+Act and requires accommodations, you should contact the Student Disability
+Resources Office for information on appropriate policies and procedures. 
+The Disability Resources Office is located in the Student Services
+Building, Room 1076; phone number: 515-294-7220. The next step is to
+see me. I am happy to assist with accommodations, but I will not
+provide them retroactively (so file the appropriate requests and paperwork 
+before the first exam!).
 
 Other References
 ----------------

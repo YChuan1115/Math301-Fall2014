@@ -1,0 +1,424 @@
+% Example LaTeX document for GP111 - note % sign indicates a comment
+\documentclass[12pt,reqno]{amsart}
+\usepackage[top=1.5cm, left=1.5cm,right=1.5cm,bottom=1.5cm]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color,hyperref,enumerate,multicol}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+            
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\pagestyle{empty}
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\meet}{\ensuremath{\wedge}}
+\newcommand{\Meet}{\ensuremath{\bigwedge}}
+\newcommand{\join}{\ensuremath{\vee}}
+\renewcommand{\emptyset}{\ensuremath{\varnothing}}
+\renewcommand{\subset}{\ensuremath{\subsetneq}}
+
+\begin{document}
+\thispagestyle{empty}
+
+\noindent \textbf{Math 301} \hskip4cm {\bf Homework 1 Solutions} \hfill {\bf Fall 2014}
+\vskip1cm
+\noindent {\bf Chapter 1:}  1cd, 2bd, (3), 7, 20b, 22cd, 24bc(de), 25d, 28.  \\
+{\bf Due date:} Friday, 8/29
+
+\bigskip
+
+\begin{enumerate}[{\bf 1.}]
+
+%% 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 1.}]
+Suppose that
+\begin{align*}
+A & = \{ x : x \in \mathbb N \text{ and } x \text{ is even} \}, \\
+B & = \{x : x \in \mathbb N \text{ and } x \text{ is prime}\}, \\
+C & = \{ x : x \in \mathbb N \text{ and } x \text{ is a multiple of 5}\}.
+\end{align*}
+Describe each of the following sets. 
+\begin{multicols}{2}
+\begin{enumerate}
+
+\item
+$A \cap B$
+
+\item
+$B \cap C$
+
+\item
+$A \cup B$
+
+\item
+$A \cap (B \cup C)$
+
+\end{enumerate}
+\end{multicols}
+
+\medskip
+
+\noindent {\bf Solution:}
+
+\medskip
+
+\begin{enumerate}
+\item[(c)] 
+$A \cup B = \{x \in \N : \text{ $x$ is even or prime } \} = \{2, 3, 4,
+5, 6, 7, 8, 10, 11, 12, 13, 14, 16, \dots \}$.
+
+\medskip
+
+\item[(d)]
+%\{ x\in \N : \text{ $x$ is even and $x$ is prime or a multiple of 5} \}
+$A \cap (B \cup C) = \{2, 10, 20, 30, \dots \}$.
+\end{enumerate}
+
+\bigskip  
+
+%% 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 2.}]
+If $A = \{ a, b, c \}$, $B = \{ 1, 2, 3 \}$, $C = \{ x \}$, and 
+$D = \emptyset$, list all of the elements in each of the following sets. 
+\begin{multicols}{2}
+\begin{enumerate}
+
+\item
+$A \times B$
+
+\item
+$B \times A$
+
+\item
+$A \times B \times C$
+
+\item
+$A \times D$
+
+\end{enumerate}
+\end{multicols}
+
+\medskip
+
+\noindent {\bf Solution:}
+
+\medskip
+
+(b) $B \times A = \{
+(1,a), (1,b), (1,c),
+(2,a), (2,b), (2,c), (2,a), (2,b)
+(3,a), (3,b), (3,c)
+\}$.
+
+\medskip
+
+(d) $A \times D = \emptyset$.
+
+\bigskip  
+
+%% 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 3.}]
+Find an example of two nonempty sets $A$ and $B$ for which $A \times B = B \times A$.
+
+\medskip
+
+\noindent {\bf Solution:} First we prove, if $A$ and $B$ are nonempty sets,
+then the following are equivalent:  
+\begin{enumerate}[(i)]
+\item 
+$A \times B = B \times A$
+\item 
+$A \times B \subseteq B \times A$
+\item 
+$A = B$
+\end{enumerate}
+
+\begin{proof}
+The implications (i) $\Rightarrow$ (ii) and (iii) $\Rightarrow$ (i) are obvious,
+so we prove (ii) $\Rightarrow$ (iii). Suppose 
+$A \times B \subseteq B \times A$ and fix an arbitrary $a \in A$.
+Since  $B \neq \emptyset$ there is a $b\in B$ so 
+$(a,b) \in A\times B \subseteq B\times A$, so $a \in B$.  
+This proves $A \subseteq B$.  
+The proof of $B \subseteq A$ is similar.
+\end{proof}
+
+Exercise 3 asks for nonempty sets $A$ and $B$ such that
+$A \times B = B \times A$.  By what we proved above, any example would have
+$A = B$. Take, e.g., $A = \{0\} = B$.  Then $A \times B = \{(0,0)\} = B\times A$.
+
+\bigskip
+
+
+ 
+%% 7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 7.}]
+Prove $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$.
+\bigskip
+
+\noindent {\bf Solution:}
+For sets $X$ and $Y$, the standard way to prove $X = Y$ 
+is to prove $X \subseteq Y$ and $Y \subseteq X$.
+So, for this problem, let us first prove
+$A \cap (B \cup C) \subseteq (A \cap B) \cup (A \cap C)$.
+To do so, it suffices to fix an arbitrary element $x \in A \cap (B \cup C)$,
+and check that 
+$x \in (A \cap B) \cup (A \cap C)$.
+Indeed, if $x \in A \cap (B \cup C)$, then $x\in A$ and 
+either $x\in B$ or $x \in C$ (or both), so we can argue by cases. (Note that in each case
+we continue to assume $x \in A$.)
+
+\medskip
+
+\underline{Case 1:} If $x\in B$, then $x \in A\cap B$, so 
+$x \in (A \cap B) \cup (A \cap C)$.
+
+\medskip
+
+\underline{Case 2:} If $x\in C$, then $x \in A\cap C$, so 
+$x \in (A \cap B) \cup (A \cap C)$.
+
+\medskip
+
+\noindent Since these two cases exhaust all possibilities, we have proved
+$A \cap (B \cup C) \subseteq (A \cap B) \cup (A \cap C)$.
+
+\medskip
+
+\noindent To prove the reverse inclusion, suppose 
+$x\in (A \cap B) \cup (A \cap C)$.  Again, we argue by cases.
+
+
+\medskip
+
+\underline{Case 1:} If $x\in A \cap B$, then $x \in A$ and 
+$x \in B \subseteq B\cup C$, so $x \in A \cap (B\cup C)$.
+
+\medskip
+
+\underline{Case 2:} If $x\in A \cap C$, then $x \in A$ and 
+$x \in C \subseteq B\cup C$, so $x \in A \cap (B\cup C)$.
+
+
+\medskip
+
+\noindent Since these two cases exhaust all possibilities, we have proved
+$(A \cap B) \cup (A \cap C) \subseteq A \cap (B \cup C)$.
+
+\bigskip
+ 
+
+\bigskip
+
+% 20 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 20.}]
+\begin{enumerate}
+  
+\item
+Define a function $f: {\mathbb N} \rightarrow {\mathbb N}$ that is one-to-one but not onto. 
+ 
+\item
+Define a function $f: {\mathbb N} \rightarrow {\mathbb N}$ that is onto but not one-to-one. 
+ 
+\end{enumerate}
+\bigskip
+\noindent {\bf Solution:}
+(b) Let $f(1) = 1$ and $f(n) = n-1$ for $n>1$.
+
+\bigskip
+ 
+% 22 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 22.}]
+Let $f : A \rightarrow B$ and $g : B \rightarrow C$ be maps.
+\begin{enumerate}
+ 
+\item
+If $f$ and $g$ are both one-to-one functions, show that $g \circ f$
+is one-to-one. 
+ 
+\item
+If $g \circ f$ is onto, show that $g$ is onto.
+ 
+\item
+If $g \circ f$ is one-to-one, show that $f$ is one-to-one.
+ 
+\item
+If $g \circ f$ is one-to-one and $f$ is onto, show that $g$ is
+one-to-one.
+ 
+\item
+If $g \circ f$ is onto and $g$ is one-to-one, show that $f$ is onto.
+ 
+\end{enumerate}
+\bigskip
+\noindent {\bf Solution:}
+\medskip
+ 
+\begin{enumerate}
+\item[(c)] 
+Fix $x, y \in A$ with $x \neq y$.  We show $f(x) \neq f(y)$.
+Since $g\circ f$ is one-to-one, $x\neq y$ implies 
+$(g\circ f)(x) \neq (g\circ f)(y)$, that is, 
+$g(f(x)) \neq g(f(y))$.  Since $g$ is a function, 
+we must have $f(x) \neq f(y)$ (for otherwise $g(f(x)) = g(f(y))$).
+
+\medskip
+
+\item[(d)] 
+Fix $x, y \in B$ with $x\neq y$.  We show $g(x) \neq g(y)$.
+Since $f$ is onto, there exists $a_1, a_2 \in A$ with 
+$f(a_1) = x$ and 
+$f(a_2) = y$.  Clearly $a_1 \neq a_2$ (otherwise, $f(a_1) = f(a_2)$).
+Therefore, since $g\circ f$ is one-to-one, we have
+$g\circ f(a_1) \neq g\circ f(a_2)$; that is, 
+$g(x) \neq g(y)$.
+
+\end{enumerate}
+\bigskip
+
+%% 24 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 24.}]
+Let $f: X \rightarrow Y$ be a map with $A_1, A_2 \subset X$ and $B_1, B_2 \subset Y$. 
+\begin{enumerate}
+ 
+\item
+Prove $f( A_1 \cup A_2 ) = f( A_1) \cup f( A_2 )$.
+ 
+\item
+Prove $f( A_1 \cap A_2 ) \subset f( A_1) \cap f( A_2 )$.  Give an example in which equality fails.
+ 
+\item
+Prove $f^{-1}( B_1 \cup B_2 ) = f^{-1}( B_1) \cup f^{-1}(B_2 )$, where
+\[
+f^{-1}(B) = \{ x \in X : f(x) \in B \}.
+\]
+ 
+\item
+Prove $f^{-1}( B_1 \cap B_2 ) = f^{-1}( B_1) \cap f^{-1}( B_2 )$. 
+ 
+\item
+Prove $f^{-1}( Y \setminus B_1 ) = X \setminus f^{-1}( B_1)$.
+ 
+\end{enumerate}
+\bigskip
+\noindent {\bf Solution:}
+\medskip
+\begin{enumerate}
+\item[(b)] 
+Fix $x \in A_1 \cap A_2$.  We show $f(x) \in f(A_1) \cap f(A_2)$.
+Since $x \in A_1 \cap A_2$ we have $x \in A_1$, so $f(x) \in f(A_1)$.
+Similarly, $x \in A_1 \cap A_2$ implies $x \in A_2$, so $f(x) \in f(A_2)$.
+Therefore, $f(x) \in f(A_1) \cap f(A_2)$.
+
+An example in which equality fails: $A_1 = \{1\}$,
+$A_2 = \{2\}$, and $f(1) = 1 = f(2)$.  
+Here, $f(A_1\cap A_2) = f(\emptyset) = \emptyset$, while 
+$f(A_1) = \{1 \} = f(A_2)$, so 
+$f(A_1)\cap f(A_2) = \{1 \}$.
+
+\medskip
+
+\item[(c)] Suppose $a \in f^{-1}(B_1 \cup B_2)$.  
+We show $a \in f^{-1}(B_1) \cup f^{-1}(B_2)$.
+Since $a \in f^{-1}(B_1 \cup B_2)$, there exists 
+$b \in B_1\cup B_2$ such that $f(a) = b$.
+If $b \in B_1$, then $a\in f^{-1}(B_1)$.
+If $b \in B_2$, then $a\in f^{-1}(B_2)$. 
+Since these two cases exhaust all cases
+in which $b \in B_1\cup B_2$, 
+we have $a \in f^{-1}(B_1) \cup f^{-1}(B_2)$.
+
+Suppose $a \in f^{-1}(B_1) \cup f^{-1}(B_2)$.
+We show $a \in f^{-1}(B_1 \cup B_2)$.  
+If $a \in f^{-1}(B_1)$, then 
+there exists $b \in B_1 \subseteq B_1 \cup B_2$ such that $f(a) = b$.
+If $a \in f^{-1}(B_2)$, then 
+there exists $b \in B_2 \subseteq B_1 \cup B_2$ such that $f(a) = b$.
+In either case 
+there exists $b \in B_1 \cup B_2$ such that $f(a) = b$, so 
+$a \in f^{-1}(B_1 \cup B_2)$.
+
+
+\end{enumerate}
+ 
+\bigskip
+
+%% 25 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 25.}]
+Determine whether or not the following relations are equivalence relations on the given set.  If the relation is an equivalence relation, describe the partition given by it.  If the relation is not an equivalence relation, state why it fails to be one.
+\begin{multicols}{2}
+\begin{enumerate}
+ 
+\item
+$x \sim y$ in ${\mathbb R}$ if $x \geq y$
+ 
+\item
+$m \sim n$ in ${\mathbb Z}$ if $mn > 0$
+ 
+\item
+$x \sim y$ in ${\mathbb R}$ if $|x - y| \leq 4$
+ 
+\item
+$m \sim n$ in ${\mathbb Z}$ if $m \equiv n \pmod{6}$
+ 
+\end{enumerate}
+\end{multicols}
+ 
+\bigskip
+\noindent {\bf Solution:}
+\medskip
+\noindent (d) 
+Let $\sim$ be the relation on $\Z$ defined by 
+$m \sim n$ if and only if $m \equiv n \pmod{6}$.
+Recall that $m\equiv n \pmod 6$ means $m-n = 6k$ for some $k\in \N$.  
+
+\medskip
+
+\noindent To check that $\sim$ is reflexive, note that for every $m \in \N$ 
+we have $m - m = 0 = 6\cdot 0$, so $m \equiv m \pmod{6}$, so $m\sim m$.
+
+\medskip
+
+\noindent To check that $\sim$ is symmetric, note that for all $m, n \in \N$ 
+we have $m - n = 6k$ implies $n - m = 6(-k)$, so $m \sim n$ implies $n \sim m$.
+
+\medskip
+
+\noindent Finally, to check that $\sim$ is transitive, suppose 
+$m - n = 6k'$ and $n - r = 6k''$ for some $k', k'' \in \N$.  Then
+$m - r = m-n + n-r = 6k' + 6k'' = 6(k'+k'') = 6k$.  Therefore,
+$m\sim n$ and $n\sim r$ imply $m\sim r$.
+
+
+\bigskip
+
+ 
+\item[{\bf 28.}]
+Find the error in the following argument by providing a counterexample. ``The
+reflexive property is redundant in the axioms for an equivalence relation.  If
+$x \sim y$, then $y \sim x$ by the symmetric property.  Using the transitive
+property, we can deduce that $x \sim x$.''
+ 
+\bigskip
+\noindent {\bf Solution:}
+Consider the set $A = \{0, 1, 2\}$.  Let $R = \{(1,1), (1,2), (2,1), (2,2)\}$.
+Then $R$ is a symmetric and transitive binary relation on $A$, but $R$ is not
+reflexive on $A$ since $(0,0) \notin R$.
+
+\end{enumerate}
+\end{document}
+
+ 
+ 
+\item
+\textbf{Projective Real Line.}
+Define a relation on ${\mathbb R}^2 \setminus  (0,0)$ by letting $(x_1, y_1) \sim (x_2, y_2)$ if there exists a nonzero real number $\lambda$ such that $(x_1, y_1)  = ( \lambda x_2, \lambda y_2)$.  Prove that $\sim$ defines an equivalence relation on ${\mathbb R}^2 \setminus (0,0)$.  What are the corresponding  equivalence classes?  This equivalence relation defines the projective line, denoted by  ${\mathbb P}({\mathbb R} )$, which is very important in geometry.
+ 
+\end{enumerate}
+}
+ 
