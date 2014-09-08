@@ -147,21 +147,24 @@ software called [Sage](http://www.sagemath.org).  Sage essentially provides a
 nice browser-based interface to a [vast array][] of well developed and powerful
 open source mathematical software.
 
-Getting started with Sage is extremely easy.  You don't even need to install any
+Getting started with Sage is very easy.  You don't even need to install any
 software. By using Sage though a web browser you can and do all your computing,
-and store all your sage worksheets, in the cloud.
+and store all your Sage worksheets, in the cloud.
 
 It's also possible to download and install Sage on your own computer.  Sage is free
 and open source, and it is typically not *too* hard to install. 
 
+Here are some things you might try to get started with Sage:
+
+1. Go to http://www.sagemath.org/ and click [Try Sage Online](http://cloud.sagemath.com/).  
+2. Check out the web page at
+[http://abstract.ups.edu/sage-aata.html](http://abstract.ups.edu/sage-aata.html).
+It is [a Sage companion to our textbook!](http://abstract.ups.edu/sage-aata.html)
+3. Browse some of the [Sage Thematic Tutorials](http://www.sagemath.org/doc/thematic_tutorials/index.html)
+
 If you've used Sage before and just need a quick refresher, you might
 check out the [Sage Quick Start Guides](http://www.sagemath.org/doc/prep/quickstart.html).  
 
-If you are new to Sage, consider trying the following:
-
-1. Go to http://www.sagemath.org/ and click [Try Sage Online](http://cloud.sagemath.com/).  
-2. [Getting started using Sage](http://www.sagemath.org/doc/prep/Logging-On.html) explains how to create an account.  
-3. Check out the [Sage Thematic Tutorials](http://www.sagemath.org/doc/thematic_tutorials/index.html)
 
 Questions and Online Discussions
 --------------------------------
