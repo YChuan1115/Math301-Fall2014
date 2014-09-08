@@ -13,3 +13,7 @@ not set in bold font are recommended but not required.
    **Due: Friday, 8/29**  
    (Problems 24de and 28 are recommended but not required.)
 
+2. **Chapter 2: 14, 22, 24, 25, 26, 28.**  
+   **Due: Wednesday, 9/10**  
+   *Optional Computing Part:* You can earn up to 1 percentage point (of your
+    course grade!) by doing [Sage Assignment 1](http://github.com/williamdemeo/Math301-Fall2014/sage). 
