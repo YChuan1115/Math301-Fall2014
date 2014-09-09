@@ -16,4 +16,4 @@ not set in bold font are recommended but not required.
 2. **Chapter 2: 14, 22, 24, 25, 26, 28.**  
    **Due: Wednesday, 9/10**  
    *Optional Computing Part:* You can earn up to 1 percentage point (of your
-    course grade!) by doing [Sage Assignment 1](http://github.com/williamdemeo/Math301-Fall2014/sage). 
+    course grade!) by doing [Sage Assignment 1](https://github.com/williamdemeo/Math301-Fall2014/tree/master/sage). 
