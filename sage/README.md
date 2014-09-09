@@ -37,7 +37,7 @@ The following are some notes about each part of the assignment:
    part). Then, where it says "Select the type," choose "Sage Worksheet."
 
 3. You are to solve one of the three problems described on
-   [page 35 of our textbook](http://github.com/williamdemeo/Math301-Fall2014/homework/pdf/SageAssignment1.pdf).
+   [page 35 of our textbook](https://github.com/williamdemeo/Math301-Fall2014/blob/master/homework/pdf/SageAssignment1.pdf).
 
 There is plenty of online documentation for Sage. If you need help, please ask!
 Also, you can find some nice examples of Sage programs that are specifically
