@@ -1,0 +1,274 @@
+% Example LaTeX document for GP111 - note % sign indicates a comment
+\documentclass[12pt,reqno]{amsart}
+\usepackage[top=1.5cm, left=1.5cm,right=1.5cm,bottom=1.5cm]{geometry}
+\renewcommand{\baselinestretch}{1.2}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color,hyperref,enumerate,multicol}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+            
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\pagestyle{empty}
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\meet}{\ensuremath{\wedge}}
+\newcommand{\Meet}{\ensuremath{\bigwedge}}
+\newcommand{\join}{\ensuremath{\vee}}
+\renewcommand{\emptyset}{\ensuremath{\varnothing}}
+\renewcommand{\subset}{\ensuremath{\subsetneq}}
+\newcommand{\boldemph}{\emph}
+\newcommand{\lcm}{\operatorname{lcm}}
+
+\begin{document}
+\thispagestyle{empty}
+
+\noindent \textbf{Abstract Algebra} \hskip3cm {\bf Thomas Judson} \hfill {\bf Chapter 2 Exercises}
+\medskip
+
+\begin{enumerate}[{\bf 1.}]
+
+%% 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 1.}]
+Prove that
+\[
+1^2 + 2^2 + \cdots + n^2 = \frac{n(n + 1)(2n + 1)}{6}
+\]
+for $n \in {\mathbb N}$.
+
+%% 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 2.}]
+Prove that
+\[
+1^3 + 2^3 + \cdots + n^3 = \frac{n^2(n + 1)^2}{4}
+\]
+for $n \in {\mathbb N}$.
+
+%% 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 3.}]
+Prove that $n! > 2^n$ for $n \geq 4$.
+
+%% 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 4.}]
+Prove that
+\[
+x + 4x + 7x + \cdots + (3n-2)x = \frac{n(3n - 1)x}{2}
+\]
+for $n \in {\mathbb N}$.
+
+%% 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 5.}]
+Prove that $10^{n + 1} + 10^n + 1$ is divisible by 3 for $n \in {\mathbb N}$.
+
+%% 6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 6.}]
+Prove that $4 \cdot 10^{2n} + 9 \cdot 10^{2n - 1} + 5$ is divisible by 99 for $n \in {\mathbb N}$.
+
+%% 7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 7.}]
+Show that
+\[
+\sqrt[n]{a_1 a_2 \cdots a_n} \leq \frac{1}{n} \sum_{k = 1}^{n} a_k.
+\]
+
+%% 8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 8.}]
+Prove the Leibniz rule for $f^{(n)} (x)$, where $f^{(n)}$ is the $n$th derivative of $f$; that is, show that 
+\[
+(fg)^{(n)} (x) = \sum_{k=0}^{n} \binom{n}{k} f^{(k)}(x) g^{(n-k)} (x).
+\]
+
+%% 9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 9.}]
+Use induction to prove that $1 + 2 + 2^2 + \cdots + 2^n = 2^{n + 1} - 1$ for $n \in {\mathbb N}$. 
+
+%% 10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 10.}]
+Prove that
+\[
+\frac{1}{2}+ \frac{1}{6} + \cdots + \frac{1}{n(n + 1)} = \frac{n}{n + 1} 
+\]
+for $n \in {\mathbb N}$.
+
+%% 11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 11.}]
+If $x$ is a nonnegative real number, then show that $(1 + x)^n - 1 \geq nx$ for $n = 0, 1, 2, \ldots$. 
+ 
+%% 12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 12.}]
+\textbf{Power Sets.} 
+Let $X$ be a set.  Define the \emph{power set} of $X$, denoted ${\mathcal P}(X)$, to be the set of all subsets  of $X$.  For example,  
+\[
+{\mathcal P}( \{a, b\} ) = \{ \emptyset, \{a\}, \{b\}, \{a, b\} \}.
+\]
+For every positive integer $n$, show that a set with exactly $n$ elements has a power set with exactly $2^n$ elements.
+
+%% 13 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 13.}]
+Prove that the first and second principles of mathematical induction are equivalent. 
+
+%% 14 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 14.}]
+Show that the Principle of Well-Ordering for the natural numbers implies that 1 is the smallest natural number.  Use this result to show that the Principle of Well-Ordering implies the Principle of Mathematical Induction; that is, show that if $S \subset {\mathbb N}$ such that $1 \in S$ and $n + 1 \in S$ whenever $n \in S$, then $S = {\mathbb N}$.  
+
+%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 15.}]
+For each of the following pairs of numbers $a$ and $b$, calculate $\gcd(a,b)$ and find integers $r$ and $s$ such that  $\gcd(a,b) = ra + sb$. 
+\begin{multicols}{2}
+\begin{enumerate}
+
+\item 
+14 and 39
+
+\item
+234 and 165
+
+\item
+1739 and 9923
+
+\item
+471 and 562
+
+\item
+23,771 and 19,945
+
+\item
+$-4357$ and 3754
+
+\end{enumerate}
+\end{multicols}
+ 
+%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 16.}]
+Let $a$ and $b$ be nonzero integers. If there exist integers $r$ and $s$ such that $ar +bs =1$, show that $a$ and $b$ are relatively prime. 
+ 
+ 
+%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 17.}]
+\textbf{Fibonacci Numbers.}
+The Fibonacci numbers are
+\[
+1, 1, 2, 3, 5, 8, 13, 21, \ldots.
+\]
+We can define them inductively by $f_1 = 1$, $f_2 = 1$, and $f_{n + 2} = f_{n + 1} + f_n$ for $n \in {\mathbb N}$. 
+\begin{enumerate}
+ 
+ \item
+Prove that $f_n < 2^n$.
+ 
+ \item
+Prove that $f_{n + 1} f_{n - 1} = f^2_n + (-1)^n$, $n \geq 2$.
+ 
+ \item
+Prove that $f_n = [(1 + \sqrt{5}\, )^n - (1 - \sqrt{5}\, )^n]/ 2^n \sqrt{5}$.
+ 
+ \item
+Show that $\lim_{n \rightarrow \infty} f_n / f_{n + 1} = (\sqrt{5} - 1)/2$. 
+ 
+ \item
+Prove that $f_n$ and $f_{n + 1}$ are relatively prime.
+ 
+\end{enumerate}
+
+%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 18.}]
+Let $a$ and $b$ be integers such that $\gcd(a,b) = 1$.  Let $r$ and $s$ be integers such that $ar + bs =1$.  Prove that 
+\[
+\gcd(a,s) = \gcd(r,b) = \gcd(r,s) =  1.
+\]
+
+%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 19.}]
+Let $x, y \in {\mathbb N}$ be relatively prime.  If $xy$ is a perfect square, prove that $x$ and $y$ must both be perfect squares.
+
+%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 20.}]
+Using the division algorithm, show that every perfect square is of the form $4k$ or $4k + 1$ for some nonnegative integer $k$.
+
+%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 21.}]
+Suppose that $a, b, r, s$ are pairwise relatively prime and that
+\begin{align*}
+a^2 + b^2 & = r^2 \\
+a^2 - b^2 & = s^2.
+\end{align*}
+Prove that $a$, $r$, and $s$ are odd and $b$ is even.
+
+%% TWJ 9/15/2011
+%% Changed "coprime" to "pairwise relatively prime"
+%% Suggested by R. Beezer
+ 
+%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 22.}]
+Let $n \in {\mathbb N}$.  Use the division algorithm to prove that every integer is congruent mod $n$ to precisely one of the integers $0, 1, \ldots, n-1$.  Conclude that if $r$ is an integer, then there is exactly one $s$ in ${\mathbb Z}$ such that $0 \leq s < n$ and $[r] = [s]$.   Hence, the integers are indeed partitioned by congruence mod $n$. 
+
+%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 23.}]
+Define the \boldemph{least common multiple} of two nonzero integers $a$ and $b$, denoted by $\lcm(a,b)$\label{leastcm}, to be the nonnegative integer $m$ such that both $a$ and $b$ divide $m$, and if $a$ and $b$  divide any other integer $n$, then $m$ also divides $n$.  Prove that any two integers $a$ and $b$ have a unique least common multiple. 
+
+%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 24.}]
+If $d= \gcd(a, b)$ and $m = \lcm(a, b)$, prove that $dm = |ab|$.
+
+%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 25.}]
+Show that $\lcm(a,b) = ab$ if and only if $\gcd(a,b) = 1$.
+
+%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 26.}]
+Prove that $\gcd(a,c) = \gcd(b,c) =1$ if and only if $\gcd(ab,c) = 1$ for integers $a$, $b$, and $c$.
+
+%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 27.}]
+Let $a, b, c \in {\mathbb Z}$.  Prove that if $\gcd(a,b) = 1$ and $a  \mid bc$, then $a  \mid  c$. 
+ 
+%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 28.}]
+Let $p \geq 2$.  Prove that if $2^p-1$ is prime, then $p$ must also be prime.
+
+%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 29.}]
+Prove that there are an infinite number of primes of the form $6n + 1$. 
+
+%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 30.}]
+Prove that there are an infinite number of primes of the form $4n - 1$.
+
+%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[{\bf 31.}]
+Using the fact that 2 is prime, show that there do not exist integers $p$ and $q$ such that $p^2 = 2 q^2$.  Demonstrate that therefore $\sqrt{2}$ cannot be a rational number.  
+
+\end{enumerate}
+ 
+ 
+\subsection*{Programming Exercises}
+ 
+\begin{enumerate}
+ 
+\item
+\textbf{The Sieve of Eratosthenes.}\index{Sieve of Eratosthenes}  
+One method of computing all of the prime numbers less than a certain fixed positive integer $N$ is to list all of the numbers $n$ such that $1 < n < N$.  Begin by eliminating all of the multiples of 2.  Next eliminate all of the multiples of 3. Now eliminate all of the  multiples of 5.  Notice that 4 has already been crossed out.  Continue in this manner, noticing that we do not have to go all the way to $N$; it suffices to stop at $\sqrt{N}$.  Using this method, compute all of the prime numbers less than $N = 250$.  We can also use this method to find all of the integers that are relatively prime to an integer $N$.  Simply eliminate the prime factors of $N$ and all of their multiples.  Using this method, find all of the numbers that are relatively prime to $N= 120$.  Using the Sieve of Eratosthenes, write a program that will compute all of the primes less than an integer $N$. 
+
+\item
+Let ${\mathbb N}^0 = {\mathbb N} \cup \{ 0 \}$. Ackermann's function\index{Ackermann's function} is the function $A :{\mathbb N}^0 \times {\mathbb N}^0 \rightarrow {\mathbb N}^0$ defined by the equations 
+\begin{align*}
+A(0, y) & = y + 1, \\
+A(x + 1, 0) & = A(x, 1), \\
+A(x + 1, y + 1) & = A(x, A(x + 1, y)).
+\end{align*}
+Use this definition to compute $A(3, 1)$.  Write a program to evaluate Ackermann's function.  Modify the  program to count the number of statements executed in the program when Ackermann's function is evaluated.  How many statements are executed in the evaluation of $A(4, 1)$?  What about $A(5, 1)$?
+
+\item
+Write a computer program that will implement the Euclidean algorithm.  The program should accept two positive integers $a$ and $b$ as input and should output $\gcd( a,b)$ as well as integers $r$ and $s$ such that 
+\[
+\gcd( a,b) = ra + sb.
+\]
+ 
+
+\end{enumerate}
+\end{document}
+
