@@ -39,11 +39,11 @@ M 9/29: (Ch 5) permutation groups
   
 ## October
 
-W 10/1: (Ch 6) permutation groups; cosets  
-F 10/3: (Ch 6) Lagrange's Theorem; **HW 5 due**  
+W 10/1: (Ch 6) cosets and Lagrange's Theorem  
+F 10/3: (Ch 6) cosets and Lagrange's Theorem; **HW 5 due**  
 
 ---------------------------------------------------------
-M 10/6: (Ch 6) Lagrange's Theorem  
+M 10/6: the symmetric and alternating groups
 W 10/8: catch up; midterm review  
 F 10/10: **Midterm Exam** (focus: Ch 1--6)  
 
