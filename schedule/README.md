@@ -43,7 +43,7 @@ W 10/1: (Ch 6) cosets and Lagrange's Theorem
 F 10/3: (Ch 6) cosets and Lagrange's Theorem; **HW 5 due**  
 
 ---------------------------------------------------------
-M 10/6: the symmetric and alternating groups
+M 10/6: the symmetric and alternating groups  
 W 10/8: catch up; midterm review  
 F 10/10: **Midterm Exam** (focus: Ch 1--6)  
 
