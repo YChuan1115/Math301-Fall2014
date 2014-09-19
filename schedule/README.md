@@ -44,7 +44,7 @@ F 10/3: (Ch 6) Lagrange's Theorem; **HW 5 due**
 
 ---------------------------------------------------------
 M 10/6: (Ch 6) Lagrange's Theorem  
-W 10/8: Midterm exam review  
+W 10/8: catch up; midterm review  
 F 10/10: **Midterm Exam** (focus: Ch 1--6)  
 
 ---------------------------------------------------------
@@ -66,7 +66,7 @@ F 10/31: (Ch 11) isomorphism theorems; **HW 8 due**
 
 ---------------------------------------------------------
 M 11/3: (Ch 11) isomorphism theorems  
-W 11/5:   
+W 11/5: catch up; midterm review  
 F 11/7: **Midterm Exam** (focus: Ch 9--11, 19)  
 
 ---------------------------------------------------------
