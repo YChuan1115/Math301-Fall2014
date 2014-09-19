@@ -45,7 +45,7 @@ F 10/3: (Ch 6) cosets; **HW 5 due**
 ---------------------------------------------------------
 M 10/6: (Ch 6) Lagrange's Theorem  
 W 10/8: Midterm exam review  
-F 10/10: **Midterm Exam** Ch 1--5  
+F 10/10: **Midterm Exam Ch 1--5**  
 
 ---------------------------------------------------------
 M 10/13: (Ch 19) lattices and boolean algebras  

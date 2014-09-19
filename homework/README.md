@@ -20,3 +20,7 @@ not set in bold font are recommended but not required.
 
 3. **Chapter 3: 1d, 2bd, 3, 5, 7, 12.**  
    **Due: Friday, 9/19**  
+
+4. **Chapter 3: 16, 17, 31, 33, 44, 45, 52.**  
+   Additional suggested exercises: 35, 46, 47, 52, 54.  
+   **Due: Friday, 9/26**  
