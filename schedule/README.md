@@ -30,7 +30,7 @@ W 9/17: (Ch 3) symmetries and rigid motions
 F 9/19: (Ch 3) properties of groups; subgroups; **HW 3 due**  
 
 ---------------------------------------------------------
-M 9/22: (Ch 4) cyclic groups; 15-minute Quiz (main focus: Ch 2--3)  
+M 9/22: (Ch 4) cyclic groups  
 W 9/24: (Ch 4) cyclic groups  
 F 9/26: (Ch 5) permutation groups; **HW 4 due**  
 
@@ -39,13 +39,13 @@ M 9/29: (Ch 5) permutation groups
   
 ## October
 
-W 10/1: (Ch 5) permutation groups   
-F 10/3: (Ch 6) cosets; **HW 5 due**  
+W 10/1: (Ch 6) permutation groups; cosets  
+F 10/3: (Ch 6) Lagrange's Theorem; **HW 5 due**  
 
 ---------------------------------------------------------
 M 10/6: (Ch 6) Lagrange's Theorem  
 W 10/8: Midterm exam review  
-F 10/10: **Midterm Exam Ch 1--5**  
+F 10/10: **Midterm Exam Ch 1--6**  
 
 ---------------------------------------------------------
 M 10/13: (Ch 19) lattices and boolean algebras  
