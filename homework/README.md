@@ -5,7 +5,7 @@ The assigned homework problems for Math 301 will be posted here.
 This list will be updated periodically, but the most authoritative 
 source for homework assignments is the lecture.
 
-**Important Note: the exercises numbers listed below correspond to those in the printed version of the textbook, 
+**Important Note:** the exercises numbers listed below correspond to those in the printed version of the textbook, 
 generated from 2013/08/16 source files. 
 
 The bold faced problem numbers are required. Please submit solutions to these
