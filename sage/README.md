@@ -1,8 +1,38 @@
 Math 301, Fall 2014: Sage Information
 -------------------------------------
 
+This directory contains some information about Sage, as well as some
+Sage worksheets (files that can be loaded into Sage).
 
-## Sage Assignment 1
+The file [aata-20140815-sage-6.3.pdf](https://github.com/williamdemeo/Math301-Fall2014/blob/master/sage/aata-20140815-sage-6.3.pdf?raw=true)
+is a document that supplements our textbook with information about Sage that is
+directly tied to the text.
+
+The directory [aata-worksheets](https://github.com/williamdemeo/Math301-Fall2014/tree/master/sage/aata-worksheets)
+contains worksheets from the [supplementary document](https://github.com/williamdemeo/Math301-Fall2014/blob/master/sage/aata-20140815-sage-6.3.pdf?raw=true) mentioned above.
+
+**Important Note:** Unfortunately, older Sage worksheets
+(usually with a .sws file extension), such as those in the aata-worksheets
+directory, do not yet work with the cloud sage server at
+[cloud.sagemath.com](http://cloud.sagemath.org/).
+
+I belive work is in progress that will eventually make the cloud version of Sage
+backward compatible with older worksheets, but for now you can only load the old
+worksheets into a Sage instance running on your own local machine, or into a
+Sage session running at [www.sagenb.org](http://www.sagenb.org). 
+
+## Extra Credit Sage work for Math 301
+
+Students are not required to use Sage or any other software for Math 301.
+However, I believe Sage and other software, like Gap, can be an enormous aid to
+our intuition when learning new things about groups and other algebraic
+structures. Therefore, during the semester, I will occasionally make extra
+credit assignments available that involve the use of Sage or Gap or the
+Universal Algebra Calculator.  These optional assignments are described
+below.
+
+
+### Sage Assignment 1
 
 1. (1/4) Sign up for a Sage account at [sagemath.org](http://www.sagemath.org).  
 
@@ -19,7 +49,7 @@ me your .sagews file by email, or invite me to be a collaborator on your Math 30
 project. You must also email me a few sentences describing your experience and
 your first impressions of Sage.
 
-### Notes on Sage Assignment 1
+**Notes on Sage Assignment 1**
 
 The number in parentheses indicates the fraction of the percentage point that
 each part is worth.
