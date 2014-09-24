@@ -17,10 +17,10 @@ to the page containing the referenced item.
 
 ## Fork this repo!
 
-Want to earn some extra credit?  If you know how to use GitHub, and you notice
-an error in the text or something that could be improved, feel free to
-[fork](https://help.github.com/articles/fork-a-repo) this repository,
-and then submit a
+Want to earn some extra credit?  If you know how to use GitHub and LaTeX, and
+you notice an error in the textbook, or something that could be improved, feel
+free to [fork](https://help.github.com/articles/fork-a-repo) this repository,
+fix the problem, and then submit a
 [pull request](https://help.github.com/articles/creating-a-pull-request).
 I will evaluate your changes and consider them for inclusion in our version of
 the textbook. If your pull request is accepted, I will award a half a percentage
