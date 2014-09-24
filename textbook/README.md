@@ -1,7 +1,8 @@
-# Math 301 -- Fall 2014 -- Section B: Textbook
+# Math 301: Fall 2014 -- Textbook
 
-The file aata.pdf in this directory is a version of our textbook that I created
-from the source code residing in the judson-aata-altrev subdirectory.
+The file Math301F14_textbook.pdf in this directory is a version of our
+textbook that I created from the source code residing in the judson-aata-altrev
+subdirectory. 
 
 ## What is different about this version.
 
