@@ -6,7 +6,7 @@ This list will be updated periodically, but the most authoritative
 source for homework assignments is the lecture.
 
 **Important Note:** the exercise numbers listed below correspond to those in the printed version of the textbook, 
-generated from 2013/08/16 source files. 
+generated from 2013/08/16 source files.
 
 The bold faced problem numbers are required. Please submit solutions to these
 problems at the beginning of class on the due date shown.  The problems that are
