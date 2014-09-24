@@ -23,6 +23,6 @@ free to [fork](https://help.github.com/articles/fork-a-repo) this repository,
 fix the problem, and then submit a
 [pull request](https://help.github.com/articles/creating-a-pull-request).
 I will evaluate your changes and consider them for inclusion in our version of
-the textbook. If your pull request is accepted, I will award a half a percentage
-point of extra credit (possibly more depending on the significance of the
+the textbook. I will award a half a percentage point of extra credit for each
+accepted pull request (possibly more depending on the significance of the
 contribution).
