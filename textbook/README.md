@@ -1,7 +1,10 @@
 # Math 301: Fall 2014 -- Textbook
 
-The file Math301F14_textbook.pdf in this directory is a version of our
-textbook that I created from the source code residing in the judson-aata-altrev
+The file
+[Math301F14_textbook.pdf](https://github.com/williamdemeo/Math301-Fall2014/blob/master/textbook/Math301F14_textbook.pdf?raw=true)
+in this directory is the textbook for William DeMeo's Math 301 class
+(Section B). 
+It was created from the LaTeX source code residing in the judson-aata-altrev
 subdirectory. 
 
 ## What is different about this version.
