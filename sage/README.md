@@ -4,6 +4,8 @@ Math 301, Fall 2014: Sage Information
 This directory contains some information about Sage, as well as some
 Sage worksheets (files that can be loaded into Sage).
 
+You need not work in Sage.  If you prefer using another programming language or math software, you are encouraged to do so.  (For example, Jim Tappe wrote [a Java program to analyze the unit group](https://github.com/jimmyjames85/AbstractAlgebra). Check it out!)
+
 The file [aata-20140815-sage-6.3.pdf](https://github.com/williamdemeo/Math301-Fall2014/blob/master/sage/aata-20140815-sage-6.3.pdf?raw=true)
 is a document that supplements our textbook with information about Sage that is
 directly tied to the text.
