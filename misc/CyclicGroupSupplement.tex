@@ -76,6 +76,7 @@
 \newcommand{\IM}{\operatorname{Im}}
 \newcommand{\Poly}{{\cal{P}}(E)}
 \newcommand{\EssD}{{\cal{D}}}
+\newcommand{\units}[1]{\ensuremath{U(#1)}}
 \newcommand{\divides}{\ensuremath{\mid}}
 \newcommand{\<}{\ensuremath{\langle}}
 \renewcommand{\>}{\ensuremath{\rangle}}
@@ -129,7 +130,7 @@ generator.  However, not all elements of $G$ need be generators.
 For example $\langle -1\rangle = \{1, -1\}\ne G$ so $-1$ is not a
 generator of $G$.
 
-\item The group $G=\Z_7^*=$ the group of units of the ring $\Z_7$ is
+\item The group $G=\units{7}=$ the group of units in $\Z_7$ is
 a cyclic group with generator $3$.  Indeed,
 $$\langle 3\rangle = \{ 1=3^0, 3=3^1, 2=3^2, 6=3^3, 4=3^4, 5=3^5\}=G.$$
 Note that $5$ is also a generator of $G$, but that
@@ -138,11 +139,11 @@ $\langle 2\rangle = \{1, 2, 4\}\ne G$ so that 2 is not a generator of $G$.
 \item  $G=\langle \pi\rangle =\{\pi^k:k\in \Z\}$ is a cyclic
 subgroup of $\R^*$.
 
-\item  The group $G=\Z_8^*$ is not cyclic.  Indeed, since
-$\Z_8^*=\{1, \, 3,\, 5,\,7\}$ and $\langle 1\rangle = \{1\}$,
+\item  The group $G=\units{8}$ is not cyclic.  Indeed, since
+$\units{8}=\{1, \, 3,\, 5,\,7\}$ and $\langle 1\rangle = \{1\}$,
 $\langle 3\rangle = \{1, 3\}$, $\langle 5\rangle=\{1, 5\}$,
-$\langle 7\rangle =\{1, 7\}$, it follows that $\Z_8^*\ne \langle
-a\rangle$ for any $a\in \Z_8^*$.
+$\langle 7\rangle =\{1, 7\}$, it follows that $\units{8}\ne \langle
+a\rangle$ for any $a\in \units{8}$.
 \end{enumerate}
 \medskip
 If a group $G$ is written additively, then the identity
