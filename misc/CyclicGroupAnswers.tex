@@ -9,6 +9,8 @@
 \usepackage{graphpap}
 \usepackage{pstricks}
 \usepackage{pst-node}
+\usepackage{scalefnt}
+\usepackage{tikz}
 \newcommand{\order}[1]{\ensuremath{|#1|}}
 \newcommand{\units}[1]{\ensuremath{U(#1)}}
 \newcommand{\divides}{\ensuremath{\mid}}
@@ -120,19 +122,19 @@ $\units{12}$ has order 8.
 (a) $\order{g^2}=10$\qquad (b) $\order{g^8}=5$ \qquad (c) $\order{g^5}=4$\qquad (d)
 $\order{g^3}=20$
 \item \begin{enumerate}
-\item Subgroups:  $H_1=\langle 1\rangle$, $H_2=\langle g^2\rangle$,
+\item Subgroups:  $H_1=\langle e\rangle$, $H_2=\langle g^2\rangle$,
 $H_3=\langle g^4\rangle$, $H_4=G$.
-\item Subgroups: $H_1=\langle 1\rangle$, $H_2=\langle g^2\rangle$,
+\item Subgroups: $H_1=\langle e\rangle$, $H_2=\langle g^2\rangle$,
 $H_3=\langle g^5\rangle$, $H_4=G$.
-\item Subgroups: $H_1=\langle 1\rangle$, $H_2=\langle g^2\rangle$,
+\item Subgroups: $H_1=\langle e\rangle$, $H_2=\langle g^2\rangle$,
 $H_3=\langle g^3\rangle$, $H_4=\langle g^6\rangle$, 
 $H_5=\langle g^9\rangle $, $H_6=G$.
-\item Subgroups $H_1=\langle 1\rangle$, $H_2=\langle g^p\rangle$,
+\item Subgroups $H_1=\langle e\rangle$, $H_2=\langle g^p\rangle$,
 $H_3=\langle g^{p^2}\rangle$, $H_4=G$.
-\item Subgroups $H_1=\langle 1\rangle$, $H_2=\langle g^p\rangle$,
+\item Subgroups $H_1=\langle e\rangle$, $H_2=\langle g^p\rangle$,
 $H_3=\langle g^{q}\rangle$, $H_4=G$.
 \item Subgroups 
-$H_1=\langle 1\rangle$, $H_2=\langle g^p\rangle$,
+$H_1=\langle e\rangle$, $H_2=\langle g^p\rangle$,
 $H_3=\langle g^{p^2}\rangle$, $H_4=\langle g^q\rangle$, 
 $H_5=\langle g^{pq}\rangle$,  $H_6=G$.
 \end{enumerate}
@@ -174,5 +176,35 @@ Similarly, $d\divides k$, so $k = \beta d$
 and $y = a^k = a^{\beta d} = (a^d)^\beta$, so
 $y\in \<a^d\>$.  Therefore, $\<x, y\> \subseteq \<a^d\>$.
 \end{proof}
+
+\bigskip
+
+\noindent {\bf Exercise 5.} Part (f)\\
+\\
+If $\order{g}=p^2q$, then the subgroups of $G= \<g\>$ are
+\[
+G, \quad
+\<g^p\>, \quad 
+\<g^{p^2}\>, \quad 
+\<g^q\>, \quad 
+\<g^{pq}\>, \quad 
+\<g^{p^2q}\> = \<e\>,
+\]
+and the subgroup lattice is shown below.
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+  \node (1) at (0,0) {$\langle \eye \rangle$}; 
+  \node (6) at (2,2) {$\langle g^{pq} \rangle$}; 
+  \node (4) at (-2,2) {$\langle g^{p^2} \rangle$}; 
+  \node (2) at (0,4) {$\langle g^p \rangle$}; 
+  \node (3) at (4,4) {$\langle g^q \rangle$}; 
+  \node (G) at (2,6) {$\langle g \rangle$}; 
+
+  \draw (1) to (6) to (2) to (4) to (1);
+  \draw (6) to (3) to (G) to (2) to (4);
+
+\end{tikzpicture}
+\end{center}
 
 \end{document}
