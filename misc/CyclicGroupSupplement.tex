@@ -1,5 +1,4 @@
-
-\documentclass[11pt]{article}
+\documentclass[12pt]{article}
 \usepackage{graphics}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -288,7 +287,8 @@ the integers 1, 5, 7, 11 $\pmod{12}$.
 \end{ex}
 Now we ask what the subgroups of a  cyclic group look like.  The
 question is completely answered by Theorem~\ref{thm:10}.  
-Theorem~\ref{thm:9} is a preliminary, but important, result.\footnote{Theorem~\ref{thm:9} is called Theorem~4.3 in Judson (AATA).}
+Theorem~\ref{thm:9} is a preliminary, but important, result (it is called
+Theorem~4.3 in our textbook).
 
 \begin{thm}
 \label{thm:9}   Every subgroup of a cyclic group is cyclic.
@@ -352,45 +352,10 @@ $K=\langle g^{n/k}\rangle$.  This proves (c).
 \end{proof}
 
 \begin{rem} Part (b) of Theorem~\ref{thm:10} is actually true for {\it any} finite
-group $G$, whether or not it is cyclic.  This result is Lagrange's
-Theorem (Theorem 6.5, Page 86 of Judson).
+group $G$, whether or not it is cyclic.  The more general result is Lagrange's
+Theorem (Theorem 6.5 of our textbook).
 \end{rem}
 
-
-The subgroups of a group $G$ can be diagrammatically  illustrated
-by listing the subgroups, and indicating inclusion relations by
-means of a line directed upward from $H$ to $K$ if $H$ is a
-subgroup of $K$.  Such a scheme is called the {\bf lattice
-diagram} for the subgroups of the group $G$.  We will illustrate
-by determining the lattice diagram for all the subgroups of a
-cyclic group $G=\langle g\rangle$ of order 12.  Since the order of
-$g$ is 12, Theorem 10 (c) shows that there is exactly one subgroup
-$\langle g^d\rangle$ for each divisor $d$ of 12.  The divisors of
-$12$ are 1, 2, 3, 4, 6, 12.  Then the unique subgroup of $G$ of
-each of these orders is, respectively,
-\[
-\{\eye\}=\langle g^{12}\rangle,\quad \langle g^6\rangle, \quad
-\langle g^4\rangle,\quad \langle g^3\rangle, \quad \langle
-g^2\rangle , \quad \langle g\rangle = G.
-\]
-Note that $\langle
-g^m\rangle \subseteq \langle g^k\rangle$ if and only if $k\divides m$.
-Hence the lattice diagram of $G$ is:
-
-\begin{center}
-\begin{tikzpicture}[scale=0.75]
-  \node (1) at (0,0) {$\langle \eye \rangle$}; 
-  \node (6) at (2,2) {$\langle g^6 \rangle$}; 
-  \node (4) at (-2,2) {$\langle g^4 \rangle$}; 
-  \node (2) at (0,4) {$\langle g^2 \rangle$}; 
-  \node (3) at (4,4) {$\langle g^3 \rangle$}; 
-  \node (G) at (2,6) {$\langle G \rangle$}; 
-
-  \draw (1) to (6) to (2) to (4) to (1);
-  \draw (6) to (3) to (G) to (2) to (4);
-
-\end{tikzpicture}
-\end{center}
 
 Finally, here is one more result about cyclic groups that is sometimes
 useful (for example, in the proof that $U(4n)$ is cyclic---see Homework 5
@@ -410,11 +375,100 @@ In both cases, there is nothing to prove.
 
 Suppose $n>2$, and let $x, y \in G$ be two non-identity elements of $G$, say, 
 $x = a^j$ and $y = a^k$, where $1< j, k < n$. If $x^2 = e$, then $a^{2j}=e$.  
-Therefore $n$ divides $2j$ (by Theorem 4(a)).
+Therefore $n$ divides $2j$ (by Theorem~\ref{thm:4}~(a)).
 But $j < n$ implies $2j<2n$, so the only way to have $n\divides 2j$ is
 $n=2j$. If $y^2 = e$, then the same argument applied to $k$ yields $n=2k$.
 It follows that if $x^2 = e = y^2$, then $j=k$ and so $x = a^{j}=a^k = y$. 
 Hence involutions of cyclic groups are unique.   
 \end{proof}
+
+\newpage
+
+\pagestyle{fancy} \lhead{\bf } \chead{\bf Subgroup Lattices and Hasse Diagrams}
+\rhead{} \lfoot{} \cfoot{\thepage} \rfoot{}
+
+The subgroups of a group $G$ can be diagrammatically  illustrated
+by listing the subgroups, and indicating inclusion relations by
+means of a line directed upward from $H$ to $K$ if $H$ is a
+subgroup of $K$.  Such a scheme is called the {\bf Hasse diagram} of the 
+{\bf lattice of subgroups} of the group $G$.  
+
+We illustrate by determining the subgroup lattice for all the subgroups of a
+cyclic group $G=\langle g\rangle$ of order 12.  Since the order of
+$g$ is 12, Theorem~\ref{thm:10} (c) shows that there is exactly one subgroup
+$\langle g^d\rangle$ for each divisor $d$ of 12.  The divisors of
+$12$ are 1, 2, 3, 4, 6, 12.  Then the unique subgroup of $G$ of
+each of these orders is, respectively,
+\[
+\{\eye\}=\langle g^{12}\rangle,\quad \langle g^6\rangle, \quad
+\langle g^4\rangle,\quad \langle g^3\rangle, \quad \langle
+g^2\rangle , \quad \langle g\rangle = G.
+\]
+Note that $\langle g^m\rangle \leq \langle g^k\rangle$ if and only if $k\divides m$.
+Hence the lattice diagram of $G$ is:
+
+\begin{center}
+\begin{tikzpicture}[scale=0.75]
+  \node (1) at (0,0) {$\langle \eye \rangle$}; 
+  \node (6) at (2,2) {$\langle g^6 \rangle$}; 
+  \node (4) at (-2,2) {$\langle g^4 \rangle$}; 
+  \node (2) at (0,4) {$\langle g^2 \rangle$}; 
+  \node (3) at (4,4) {$\langle g^3 \rangle$}; 
+  \node (G) at (2,6) {$\langle g \rangle$}; 
+
+  \draw (1) to (6) to (2) to (4) to (1);
+  \draw (6) to (3) to (G) to (2) to (4);
+
+\end{tikzpicture}
+\end{center}
+
+We can generalize this example and draw the subgroup lattice of cyclic groups of
+arbitrary order. 
+Let $n$ be the order of $G = \<g\>$, and suppose the (unique) prime
+factorization of $n$ is
+\[
+n = p_1^{s_1} p_2^{s_2} \cdots p_k^{s_k},
+\]
+where $p_i$ are primes and $s_i$ are positive integers.  The
+set of all divisors of $n$ is then
+\[
+\{p_1^{t_1} p_2^{t_2} \cdots p_k^{t_k} : 0\leq t_i \leq s_i\}
+\]
+Of course, the subgroup lattice gets complicated when the integers $k$ and $s_i$
+are large, but for small values, the lattice is not hard to draw:
+For instance, if $G = \<g \>$ has order $n = 30 = 2 \cdot 3 \cdot 5$, then
+the set of divisors is 
+$\{2^{t_1} 3^{t_2} 5^{t_3} : 0\leq t_i \leq 1\} = \{1, 2, 3, 5, 6, 10, 15, 30\}$,
+and the collection of subgroups is therefore,
+\[
+G =\<g\>,\quad 
+\< g^2\>, \quad
+\< g^3\>, \quad
+\< g^5\>, \quad
+\< g^{6}\>, \quad
+\< g^{10}\>, \quad
+\< g^{15}\>, \quad
+\< g^{30}\> = \<\eye\>
+\]
+Again, we have $\<g^m\> \leq \< g^k\>$ if and only if $k\divides m$.
+The lattice of subgroups of $G$ is given by the Hasse diagram on the next page.
+\begin{center}
+\begin{tikzpicture}[scale=0.75]
+  \node (G) at (0,8) {$\< g \>$}; 
+  \node (2) at (-3,6) {$\< g^2 \>$}; 
+  \node (3) at (0,5) {$\< g^3 \>$}; 
+  \node (5) at (3,6) {$\< g^5 \>$}; 
+  \node (6) at (-3,2.5) {$\< g^6 \>$}; 
+  \node (10) at (0,3) {$\< g^{10} \>$}; 
+  \node (15) at (3,2.5) {$\< g^{15} \>$}; 
+  \node (e) at (0,0) {$\< \eye \>$}; 
+
+  \draw (e) to (15) to (3) to (6) to (e);
+  \draw (e) to (10) to (5) to (G) to (2) to (10);
+  \draw (6) to (2) (3) to (G) (15) to (5);
+
+\end{tikzpicture}
+\end{center}
+
 \end{document}
 
