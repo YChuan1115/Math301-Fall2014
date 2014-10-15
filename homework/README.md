@@ -34,3 +34,5 @@ not set in bold font are recommended but not required.
 6. **Chapter 5: 1bd, 3bd, 4, 6, 17, 18, 27.**  
    Additional suggested exercises: 29, 31, 32, 33.  
    **Due: Friday, 10/10**  
+
+7. **Chapter 19: 3, 14, 20** plus two exercises announced in class.
