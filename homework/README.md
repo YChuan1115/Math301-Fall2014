@@ -35,4 +35,4 @@ not set in bold font are recommended but not required.
    Additional suggested exercises: 29, 31, 32, 33.  
    **Due: Friday, 10/10**  
 
-7. **Chapter 19: 3, 14, 20** plus two exercises announced in class.
+7. **Chapter 19: 3, 14, 20** plus two additional exercises (see the hw07.pdf file).
