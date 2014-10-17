@@ -51,9 +51,11 @@ bound of the set $\{x, y, z\}$.
 
 %% 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item
-Let $S$ with $\cdot$ be a semilattice.  For $x, y\in S$ we say $x\leq y$ iff
-$x\cdot y  = y$. Prove that $\leq$ is a partial ordering on $S$.  Also prove
-that $x\cdot y$ is the least upper bound of the set $\{x,y\}$.
+Let $(P, \leq)$ be a partially ordered set with the property that every pair of
+elements $x, y \in P$ has a greatest lower bound. For $x, y\in P$, define 
+$x \cdot y = \operatorname{glb}(x,y)$. Prove that $(P, \cdot)$ is a semilattice.
+
+%% Let S with · be a semilattice. For x, y ∈ S we say x ≤ y iff x · y = y. Prove that ≤ is a partial ordering on S. Also prove that x · y is the least upper bound of the set {x, y}.
 
 \probskip
  
@@ -83,7 +85,7 @@ homomorphism}
 if $\psi( a \vee b ) = \psi(a) \vee \psi(b)$ and $\psi( a \wedge b ) =
 \psi(a) \wedge \psi(b)$. Show that every lattice homomorphism is
 order-preserving, but that it is not the case that every
-order-preserving homomorphism is a lattice homomorphism.  
+order-preserving map is a lattice homomorphism.  
  
  
  
