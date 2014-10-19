@@ -27,57 +27,57 @@ F 9/12: (Ch 3) intro to groups
 ---------------------------------------------------------
 M 9/15: (Ch 3) groups  
 W 9/17: (Ch 3) symmetries and rigid motions  
-F 9/19: (Ch 3) properties of groups; subgroups; **HW 3 due**  
+F 9/19: (Ch 3) properties of groups; subgroups  
 
 ---------------------------------------------------------
 M 9/22: (Ch 4) cyclic groups  
 W 9/24: (Ch 4) cyclic groups  
-F 9/26: (Ch 5) permutation groups; **HW 4 due**  
+F 9/26: (Ch 4) cyclic groups  
 
 ---------------------------------------------------------
 M 9/29: (Ch 5) permutation groups  
   
 ## October
 
-W 10/1: (Ch 6) cosets and Lagrange's Theorem  
-F 10/3: (Ch 6) cosets and Lagrange's Theorem; **HW 5 due**  
+W 10/1: (Ch 5) permutation groups   
+F 10/3: (Ch 5) the symmetric and alternating groups  
 
 ---------------------------------------------------------
 M 10/6: the symmetric and alternating groups  
 W 10/8: catch up; midterm review  
-F 10/10: **Midterm Exam** (focus: Ch 1--6)  
+F 10/10: **Midterm Exam** (focus: Ch 1--5)  
 
 ---------------------------------------------------------
-M 10/13: (Ch 19) lattices and boolean algebras  
-W 10/15: (Ch 9) isomorphism  
-F 10/17: (Ch 9) direct products; **HW 6 due**  
+M 10/13: (Ch 19) posets, lattices  
+W 10/15: (Ch 19) lattice isomorphisms, order preserving maps  
+F 10/17: (Ch 6) cosets, Lagrange's Theorem  
 
 ---------------------------------------------------------
-M 10/20: (Ch 9) automorphism groups  
-W 10/22: (Ch 10) normal subgroups  
-F 10/24: (Ch 10) factor groups; **HW 7 due**  
+M 10/20: (Ch 9) isomorphisms  
+W 10/22: (Ch 9) direct products  
+F 10/24: (Ch 10) normal subgroups, factor groups  
 
 ---------------------------------------------------------
 M 10/27: (Ch 10) congruence relations  
 W 10/29: (Ch 11) homomorphisms  
-F 10/31: (Ch 11) isomorphism theorems; **HW 8 due**  
+F 10/31: (Ch 11) isomorphism theorems  
 
 ## November
 
 ---------------------------------------------------------
 M 11/3: (Ch 11) isomorphism theorems  
 W 11/5: catch up; midterm review  
-F 11/7: **Midterm Exam** (focus: Ch 9--11, 19)  
+F 11/7: **Midterm Exam** (focus: Ch 6, 9--11, 19)  
 
 ---------------------------------------------------------
-M 11/10: (Ch 13) fundamental thm of finite abelian groups  
+M 11/10: (Ch 13) fundamental theorem of finite abelian groups  
 W 11/12: (Ch 13) solvable groups  
-F 11/14: subgroup lattices; Zassenhaus butterfly; **HW 9 due**  
+F 11/14: subgroup lattices; Zassenhaus butterfly  
 
 ---------------------------------------------------------
 M 11/17: (Ch 14) group actions  
 W 11/19: (Ch 14) group actions  
-F 11/21: (Ch 15) Sylow Theorems; **HW 10 due**  
+F 11/21: (Ch 15) Sylow Theorems  
 
 ---------------------------------------------------------
 M 11/24: no class (Thanksgiving break)   
@@ -88,13 +88,13 @@ F 11/28:
 
 ---------------------------------------------------------
 M 12/1: (Ch 16) introducing rings  
-W 12/3: (Ch 16) integral domains and fields  
-F 12/5: (Ch 16) ring homomorphisms and ideals; **HW 11 due**  
+W 12/3: (Ch 16) integral domains, fields  
+F 12/5: (Ch 16) ring homomorphisms, ideals  
 
 ---------------------------------------------------------
 M 12/8: (Ch 16) maximal and prime ideals  
 W 12/10: Review for final exam  
-F 12/12: **HW 12 due**  
+F 12/12: Review for final exam  
 
 ---------------------------------------------------------
 M 12/15: **Final Exam 9:45--11:45am in Carver 196**  
