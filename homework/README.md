@@ -39,4 +39,13 @@ not set in bold font are recommended but not required.
    **Due: Wednesday, 10/22**  
 
 8. **Chapter 6: 5bd, 11ade, 16, 18** plus one additional exercise (see hw08.pdf file).  
-   **Due: Friday, 10/24**
+   **Due: Monday, 10/27**
+
+9. **Chapter 9: TBA  
+   **Due: Friday, 10/31**
+
+10. **Chapter 10: TBA  
+   **Due: Monday, 11/03**
+
+11. **Chapter 11: TBA  
+   **Due: Monday, 11/07**
