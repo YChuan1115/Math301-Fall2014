@@ -67,12 +67,12 @@ F 10/31: (Ch 11) isomorphism theorems
 ---------------------------------------------------------
 M 11/3: (Ch 11) isomorphism theorems  
 W 11/5: catch up; midterm review  
-F 11/7: **Midterm Exam** (focus: Ch 6, 9--11, 19)  
+F 11/7: catch up; midterm review  
 
 ---------------------------------------------------------
-M 11/10: (Ch 13) fundamental theorem of finite abelian groups  
-W 11/12: (Ch 13) solvable groups  
-F 11/14: subgroup lattices; Zassenhaus butterfly  
+M 11/10: **Midterm Exam** (focus: Ch 6, 9--11, 19)  
+W 11/12: (Ch 13) fundamental theorem of finite abelian groups  
+F 11/14: (Ch 13) solvable groups  
 
 ---------------------------------------------------------
 M 11/17: (Ch 14) group actions  
