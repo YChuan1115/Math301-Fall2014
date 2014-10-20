@@ -5,6 +5,7 @@
 \usepackage{geometry}
 \usepackage{fancyhdr}
 \usepackage{scalefnt}
+\usepackage{url}
 \usepackage{tikz}
 \pagestyle{fancy} \lhead{\bf Math 301} \chead{\bf }
 \rhead{\bf Definitions} \lfoot{} \cfoot{\thepage} \rfoot{}
@@ -25,7 +26,14 @@
 \setlength{\oddsidemargin}{.1in}
 \setlength{\evensidemargin}{.1in} \setlength{\voffset}{-.5in}
 \setlength{\topmargin}{0pt}
-
+\newcommand{\boldemph}[1]{#1}
+\newcommand\<{\ensuremath{\langle}}
+\renewcommand\>{\ensuremath{\rangle}}
+\newcommand\meet{\ensuremath{\wedge}}
+\newcommand\join{\ensuremath{\vee}}
+\newcommand\bS{\ensuremath{\mathbf{S}}}
+\newcommand\bA{\ensuremath{\mathbf{A}}}
+\newcommand\bR{\ensuremath{\mathbf{R}}}
 \begin{document}
 
 
@@ -36,14 +44,23 @@ Students must know the precise definitions of the following terms:
 \item Cartesian product
 \item relation
 \item function
-\item arity of a relation or function (e.g., nullary, unary, binary, ternary, $n$-ary)
-\item onto, one-to-one, bijective function
+\item operation
+\item universe
+\item arity of relation, function, or operation (e.g., nullary, unary, binary, ternary, $n$-ary)
+\item $n$-ary relation on a set $X$ (notation: $\rho \subseteq X^n$)
+\item $n$-ary function from set $X$ to set $Y$ (notation: $f: X^n \rightarrow Y$)
+\item $n$-ary operation on a set $X$ (notation: $f: X^n \rightarrow X$)
+\item interpretation of $n$-ary operation as special kind of $(n+1)$-ary relation
+\item properties binary relations might satisfy: \boldemph{reflexive},
+  \boldemph{(anti)symmetric}, \boldemph{transitive}
+\item properties functions might satisfy: onto, one-to-one, bijective
+\item properties operations might satisfy: commutative, associative, idempotent
 \item equivalence relation
-\item partition
 \item equivalence class
+\item partition
 \item congruence modulo $n$
 \item partial order
-\item partially ordered set
+\item partially ordered set (poset), $\<P, \preceq\>$
 \item total order
 \item totally ordered set
 \item well-ordered set
@@ -55,32 +72,51 @@ Students must know the precise definitions of the following terms:
 \item prime number
 \item prime factorization
 \item power set
-\item algebra (or algebraic structure)
-\item universe
-\item operation
-\item associative and commutative properties (of binary operations)
-\item magma
-\item semigroup
-\item monoid
-\item group
+\item relational structure, $\<A, \mathcal{R}\>$, with universe $A$ and relations $\mathcal{R}$ 
+\item algebraic structure, $\<A, \mathcal{F}\>$, with universe $A$ and operations $\mathcal{F}$ 
+\item examples of relational structures (e.g., poset, graph)\footnote{\label{note1}\emph{Many} more examples at \url{http://www.math.chapman.edu/~jipsen/structures/doku.php/index.html}}
+\item examples of algebraic structures (e.g., magma, semigroup, monoid, group)\footnotemark[\ref{note1}]
 \item identity element
 \item inverse operation
 \item abelian group
 \item Cayley table
 \item finite group
-\item order (of a finite group)
+\item subgroup, proper subgroup, trivial subgroup
+\item order (of a group or subgroup)
+\item order (of a group element)
 \item $g^n$ and $g^{-n}$ (for $g$ an element of a multiplicative group)
 \item $ng$ and $-ng$ (for $g$ an element of an additive group)
-\item order (of a group element)
-\item subgroup, proper subgroup, trivial subgroup
 \item cyclic group
-\item generator
+\item generator (of a cyclic group)
+\item generators (of a group)
 \item symmetry, rigid motion
-\item permutation (and two ways to denote a permutation)
+\item permutation (and two ways to write them)
 \item cycle
-\item length (of a cycle)
+\item length of a cycle
 \item transposition
 \item even, odd (permutation)
 \item examples of groups: $\mathbb{Z}_n$, $U(n)$, $S_n$, $A_n$, $D_4$
+\item \boldemph{upper bound} (of a subset of a poset, lattice, or join semilattice)
+\item \boldemph{least upper bound} or \boldemph{supremum} or join
+\item \boldemph{lower bound}
+\item \boldemph{greatest lower bound} or \boldemph{infimum} or meet
+\item \boldemph{lattice}, $\<L, \meet, \join\>$
+\item \boldemph{semilattice}, $\<S, \cdot\>$
+\item \boldemph{meet semilattice}, $\<S, \meet\>$
+\item \boldemph{join semilattice}, $\<S, \join\>$
+\item \boldemph{join} (of elements), $a\join b$
+\item \boldemph{meet} (of elements), $a\meet b$
+\item \boldemph{join} (of a subset), $\bigvee T$
+\item \boldemph{meet} (of a subset), $\bigwedge T$
+\item \boldemph{largest element} (of a poset; need not exist)
+\item \boldemph{smallest element} (of a poset; need not exist)
+\item order-preserving map
+\item lattice homomorphism
+\item \boldemph{left coset}
+\item \boldemph{right coset}
+\item \boldemph{coset representative}
+\item \boldemph{index} (of a subgroup)
+\item \boldemph{Euler} $\varphi$ \boldemph{function}
+\item \boldemph{conjugate} elements of a group
 \end{itemize}
 \end{document}
