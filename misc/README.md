@@ -7,7 +7,7 @@
   **Examples: Group-like structures**  
     + [Magma](http://en.wikipedia.org/wiki/Magma_(algebra)) (or groupoid) a set S and a
       single binary operation defined on S.  
-	+ [Semigroup](http://en.wikipedia.org/wiki/Semigroup) an associative magma.  
+	+ [Semigroup](http://en.wikipedia.org/wiki/Semigroup) a magma whose operation is associative.  
 	+ [Semilattice](http://en.wikipedia.org/wiki/Semilattice) a semigroup whose
       operation is idempotent and commutative.  
 	  (The binary operation can be called either meet or join.)  
