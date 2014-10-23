@@ -1,5 +1,6 @@
-## Miscellaneous files and info for Math 301
+## Math 301: Miscellaneous files and info
 
+### Some Online Resources
 + [A list of mathematical structures](http://www.math.chapman.edu/~jipsen/structures/doku.php/index.html).  
 + Some relevant Wikipedia pages:  
   + [Algebraic structure](http://en.wikipedia.org/wiki/Algebraic_structure)  
