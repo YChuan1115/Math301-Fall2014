@@ -41,7 +41,8 @@ not set in bold font are recommended but not required.
 8. **Chapter 6: 5bd, 11ade, 16, 18** plus one additional exercise (see hw08.pdf file).  
    **Due: Monday, 10/27**
 
-9. **Chapter 9:** TBA  
+9. **Chapter 9: 22, 27, 31** plus three additional exercises (see hw09.pdf file).   
+   Additional suggested exercises: 9.19, 9.21, 9.23, 9.41, 9.42, 9.45    
    **Due: Friday, 10/31**
 
 10. **Chapter 10:** TBA  
