@@ -151,25 +151,25 @@ not appropriate for posets.
 
 \begin{center}
 \begin{tikzpicture}[scale=0.75]
-  \node (0) at (0,0) [fill,circle,inner sep=1.2pt] {};
-  \node (1) at (0,2) [fill,circle,inner sep=1.2pt] {};
-  \node (2) at (0,4) [fill,circle,inner sep=1.2pt] {};
-  \draw (0) node [right] {$0$};
-  \draw (1) node [right] {$1$};
-  \draw (2) node [right] {$2$};
-  \node (3) at (0.5,-1.5) {$\bP = \<\{0,1,2\}, \leqslant \>$};
-  \draw (0) to (1) to (2);
-\end{tikzpicture}
-\hskip3cm
-\begin{tikzpicture}[scale=0.75]
   \node (0) at (0,.5) [fill,circle,inner sep=1.2pt] {};
   \node (1) at (2,3) [fill,circle,inner sep=1.2pt] {};
   \node (2) at (-2,3) [fill,circle,inner sep=1.2pt] {};
   \draw (0) node [right] {$a$};
   \draw (1) node [right] {$b$};
   \draw (2) node [right] {$c$};
-  \node (3) at (0.5,-1) {$\bQ = \<\{a,b,c\}, \preccurlyeq\>$};
+  \node (3) at (0.5,-1) {$\bP = \<\{a,b,c\},  \leqslant\>$};
   \draw (1) to (0) to (2);
+\end{tikzpicture}
+\hskip3cm
+\begin{tikzpicture}[scale=0.75]
+  \node (0) at (0,0) [fill,circle,inner sep=1.2pt] {};
+  \node (1) at (0,2) [fill,circle,inner sep=1.2pt] {};
+  \node (2) at (0,4) [fill,circle,inner sep=1.2pt] {};
+  \draw (0) node [right] {$0$};
+  \draw (1) node [right] {$1$};
+  \draw (2) node [right] {$2$};
+  \node (3) at (0.5,-1.5) {$\bQ = \<\{0,1,2\}, \preccurlyeq\>$};
+  \draw (0) to (1) to (2);
 \end{tikzpicture}
 \end{center}
 
