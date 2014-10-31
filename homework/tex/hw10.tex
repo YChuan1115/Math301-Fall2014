@@ -1,0 +1,113 @@
+\documentclass[12pt,reqno]{amsart}
+\usepackage[top=2cm, left=2cm,right=2cm,bottom=2cm]{geometry}
+\renewcommand{\baselinestretch}{1.2}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{scalefnt}
+\usepackage{tikz}
+\usepackage{color,hyperref,enumerate,multicol}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+            
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\pagestyle{empty}
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\bL}{\ensuremath{\mathbf{L}}}
+\newcommand{\bP}{\ensuremath{\mathbf{P}}}
+\newcommand{\bQ}{\ensuremath{\mathbf{Q}}}
+\newcommand{\bA}{\ensuremath{\mathbf{A}}}
+\newcommand{\bB}{\ensuremath{\mathbf{B}}}
+\newcommand{\bG}{\ensuremath{\mathbf{G}}}
+\newcommand{\bH}{\ensuremath{\mathbf{H}}}
+\newcommand{\invG}{\ensuremath{\operatorname{inv}^{\bG}}}
+\newcommand{\invH}{\ensuremath{\operatorname{inv}^{\bH}}}
+\newcommand{\meet}{\ensuremath{\wedge}}
+\newcommand{\Meet}{\ensuremath{\bigwedge}}
+\newcommand{\<}{\ensuremath{\langle}}
+\renewcommand{\>}{\ensuremath{\rangle}}
+\newcommand{\join}{\ensuremath{\vee}}
+\renewcommand{\emptyset}{\ensuremath{\varnothing}}
+\renewcommand{\subset}{\ensuremath{\subsetneq}}
+\newcommand{\boldemph}{\emph}
+\newcommand{\lcm}{\operatorname{lcm}}
+
+\newcommand{\probskip}{\vskip1cm}
+
+\begin{document}
+\thispagestyle{empty}
+
+\noindent \textbf{Math 301} \hskip5cm {\bf Homework 10} \hfill {\bf Fall 2014}
+\vskip1cm
+\noindent {\bf Exercises:} Chapter 10: 1abe, 5, 10, 11, 13acd\\
+{\bf Due date:} Wednesday, 11/05
+
+\bigskip
+
+\begin{enumerate}[{\bf 1.}]
+%% 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item For each of the following groups $G$, determine whether $H$ is a normal
+subgroup of $G$. If $H$ is a normal subgroup, write out a Cayley table
+for the factor group $G/H$.
+\begin{enumerate}
+\item[(a)]
+$G = S_4$ and $H = A_4$
+ \item[(b)]
+$G = A_5$ and $H = \{ (1), (123), (132) \}$
+%%  \item
+%% $G = S_4$ and $H = D_4$
+%%  \item
+%% $G = Q_8$ and $H = \{ 1, -1, I, -I \}$
+\item[(e)]
+
+$G = {\mathbb Z}$ and $H = 5 {\mathbb Z}$
+ 
+\end{enumerate}
+
+\bigskip
+
+\item[{\bf 5.}]
+Show that the intersection of two normal subgroups is a normal
+subgroup. 
+ 
+\bigskip
+
+\item[{\bf 10.}]
+Let $H$ be a subgroup of index 2 of a group $G$. Prove that $H$ must
+be a normal subgroup of $G$. Conclude that $S_n$ is not simple for $n \geq 3$.
+
+\bigskip
+
+\item[{\bf 11.}]
+If a group $G$ has exactly one subgroup $H$ of order $k$, prove that
+$H$ is normal in $G$. 
+
+\bigskip
+
+\item[{\bf 13.}]
+Recall that the {\bf center} of a group $G$ is the set 
+\[
+Z(G) = \{ x \in G : xg = gx \text{ for all $g \in G$ } \}.
+\]
+\begin{enumerate}
+ 
+ \item[(a)]
+Calculate the center of $S_3$.
+ 
+%%  \item
+%% Calculate the center of $GL_2 ( {\mathbb R} )$.
+ 
+ \item[(c)]
+Show that the center of any group $G$ is a normal subgroup of $G$. 
+ 
+ \item[(d)]
+If $G / Z(G)$ is cyclic, show that $G$ is abelian.
+ 
+\end{enumerate}
+ 
+\end{enumerate}
+\end{document}

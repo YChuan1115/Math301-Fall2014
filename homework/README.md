@@ -45,8 +45,6 @@ not set in bold font are recommended but not required.
    Additional suggested exercises: 9.19, 9.21, 9.23, 9.41, 9.42, 9.45    
    **Due: Friday, 10/31**
 
-10. **Chapter 10:** TBA  
-   **Due: Monday, 11/03**
+10. **Chapter 10: 1abe, 5, 10, 11, 13acd**  
+   **Due: Wednesday, 11/05**
 
-11. **Chapter 11:** TBA  
-   **Due: Monday, 11/07**
