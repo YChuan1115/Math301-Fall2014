@@ -44,6 +44,6 @@ not set in bold font are recommended but not required.
    Additional suggested exercises: 9.19, 9.21, 9.23, 9.41, 9.42, 9.45    
    **Due: Friday, 10/31**
 
-10. **Chapter 10: 1abe, 5, 10, 11, 13acd**  
+10. **Chapter 10: 1abe, 5, 10, 11, 13acd** plus one additional exercise (see hw10.pdf file).  
    **Due: Wednesday, 11/05**
 

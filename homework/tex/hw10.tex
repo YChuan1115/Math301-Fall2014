@@ -34,7 +34,9 @@
 \renewcommand{\emptyset}{\ensuremath{\varnothing}}
 \renewcommand{\subset}{\ensuremath{\subsetneq}}
 \newcommand{\boldemph}{\emph}
-\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\lcm}{\ensuremath{\operatorname{lcm}}}
+\newcommand{\Sym}{\ensuremath{\operatorname{Sym}}}
+%\newcommand{\bG}{\ensuremath{\mathbf{G}}}
 
 \newcommand{\probskip}{\vskip1cm}
 
@@ -43,14 +45,14 @@
 
 \noindent \textbf{Math 301} \hskip5cm {\bf Homework 10} \hfill {\bf Fall 2014}
 \vskip1cm
-\noindent {\bf Exercises:} Chapter 10: 1abe, 5, 10, 11, 13acd\\
+\noindent {\bf Exercises:} Judson 10.1abe, 10.5, 10.10, 10.11, 10.13ac, and
+Problem 6 below.\\
 {\bf Due date:} Wednesday, 11/05
 
 \bigskip
-
-\begin{enumerate}[{\bf 1.}]
+\begin{enumerate}
 %% 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\item For each of the following groups $G$, determine whether $H$ is a normal
+\item[{\bf 10.1}] For each of the following groups $G$, determine whether $H$ is a normal
 subgroup of $G$. If $H$ is a normal subgroup, write out a Cayley table
 for the factor group $G/H$.
 \begin{enumerate}
@@ -70,25 +72,25 @@ $G = {\mathbb Z}$ and $H = 5 {\mathbb Z}$
 
 \bigskip
 
-\item[{\bf 5.}]
+\item[{\bf 10.5.}]
 Show that the intersection of two normal subgroups is a normal
 subgroup. 
  
 \bigskip
 
-\item[{\bf 10.}]
+\item[{\bf 10.10.}]
 Let $H$ be a subgroup of index 2 of a group $G$. Prove that $H$ must
 be a normal subgroup of $G$. Conclude that $S_n$ is not simple for $n \geq 3$.
 
 \bigskip
 
-\item[{\bf 11.}]
+\item[{\bf 10.11.}]
 If a group $G$ has exactly one subgroup $H$ of order $k$, prove that
 $H$ is normal in $G$. 
 
 \bigskip
 
-\item[{\bf 13.}]
+\item[{\bf 10.13.}]
 Recall that the {\bf center} of a group $G$ is the set 
 \[
 Z(G) = \{ x \in G : xg = gx \text{ for all $g \in G$ } \}.
@@ -104,10 +106,47 @@ Calculate the center of $S_3$.
  \item[(c)]
 Show that the center of any group $G$ is a normal subgroup of $G$. 
  
- \item[(d)]
-If $G / Z(G)$ is cyclic, show that $G$ is abelian.
+%%  \item[(d)]
+%% If $G / Z(G)$ is cyclic, show that $G$ is abelian.
  
 \end{enumerate}
  
 \end{enumerate}
+\vskip1cm
+
+\noindent {\bf Problem 6.} Let $\bG = \<G, \cdot, ^{-1}, e\>$ be a finite group of order $n$.  
+Take the set $G$ (the elements of $\bG$) and consider the group of all
+permutations of these elements.  This group is sometimes denoted by $\Sym(G)$;
+note that it is isomorphic to the symmetric group $S_n$ of permutations of
+an $n$-element set.
+Now fix an element $a\in G$ and recall that the function
+$\lambda_a: G \rightarrow G$, defined by $\lambda_a(g) = a\cdot g$, is a
+permutation of the set $G$.  That is, $\lambda_a$ belongs to the
+permutation group $\Sym(G)$.
+
+
+\bigskip
+
+\begin{enumerate}[(a)]
+\item 
+Prove that the function $\lambda: G \rightarrow \Sym(G)$ is a group
+homomorphism.  
+
+\bigskip
+
+\item What is the kernel of $\lambda$?\footnote{Recall that the kernel of a function $f: X \rightarrow Y$ is the subset of
+  $X\times X$ defined by 
+\[
+\ker f = \{(x_1,x_2) : f(x_1) = f(x_2)\}.
+\]
+As you have already proved, the kernel is an equivalence relation on $X$.}
+
+
+\bigskip
+
+\item Let $N$ denote the equivalence class of $\ker\lambda$ that contains the
+  identity element $e$ of $G$.  Prove that $N$ is a normal subgroup of $G$.
+\end{enumerate}
+
+
 \end{document}
