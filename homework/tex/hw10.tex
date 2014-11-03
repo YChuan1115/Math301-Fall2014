@@ -45,7 +45,7 @@
 
 \noindent \textbf{Math 301} \hskip5cm {\bf Homework 10} \hfill {\bf Fall 2014}
 \vskip1cm
-\noindent {\bf Exercises:} Judson 10.1abe, 10.5, 10.10, 10.11, 10.13ac, and
+\noindent {\bf Exercises:} Judson 10.1abe, 10.5, 10.10, 10.11, 10.13acd, and
 Problem 6 below.\\
 {\bf Due date:} Wednesday, 11/05
 
@@ -106,13 +106,18 @@ Calculate the center of $S_3$.
  \item[(c)]
 Show that the center of any group $G$ is a normal subgroup of $G$. 
  
-%%  \item[(d)]
-%% If $G / Z(G)$ is cyclic, show that $G$ is abelian.
+ \item[(d)]
+If $G / Z(G)$ is cyclic, show that $G$ is abelian.\footnote{Hint: Let $Z := Z(G)$.  If
+  $G/Z$ is cyclic then there exists $x\in G$ such that for each $a\in G$ 
+  there exists $m\in \N$ such that $aZ = x^mZ$.
+  Fix $a, b\in G$ and show $ab = ba$ using the fact that $aZ = x^mZ$ and
+  $bZ = x^nZ$ for some $m$ and $n$.}
  
 \end{enumerate}
  
 \end{enumerate}
-\vskip1cm
+
+\bigskip
 
 \noindent {\bf Problem 6.} Let $\bG = \<G, \cdot, ^{-1}, e\>$ be a finite group of order $n$.  
 Take the set $G$ (the elements of $\bG$) and consider the group of all
@@ -132,7 +137,7 @@ permutation group $\Sym(G)$.
 Prove that the function $\lambda: G \rightarrow \Sym(G)$ is a group
 homomorphism.  
 
-\bigskip
+\medskip
 
 \item What is the kernel of $\lambda$?\footnote{Recall that the kernel of a function $f: X \rightarrow Y$ is the subset of
   $X\times X$ defined by 
@@ -142,7 +147,7 @@ homomorphism.
 As you have already proved, the kernel is an equivalence relation on $X$.}
 
 
-\bigskip
+\medskip
 
 \item Let $N$ denote the equivalence class of $\ker\lambda$ that contains the
   identity element $e$ of $G$.  Prove that $N$ is a normal subgroup of $G$.
