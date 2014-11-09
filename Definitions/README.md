@@ -43,6 +43,8 @@
   + [semigroup](http://en.wikipedia.org/wiki/Semigroup)   
   + [monoid](http://en.wikipedia.org/wiki/Monoid)   
   + [group](http://en.wikipedia.org/wiki/Group_(mathematics))  
+*Many* more examples at 
+[www.math.chapman.edu/~jipsen/structures/doku.php/index.html](http://www.math.chapman.edu/~jipsen/structures/doku.php/index.html)  
 + [relational structure](http://en.wikipedia.org/wiki/Structure_(mathematical_logic))  
 + relational structure examples:   
     + [partially ordered set](http://en.wikipedia.org/wiki/Partially_ordered_set) (poset),   
