@@ -1,6 +1,8 @@
 ## Math 301: Definitions
 ### Section 39, Fall 2014
 
+This page is a Markdown version of [the Definitions list](https://github.com/williamdemeo/Math301-Fall2014/blob/master/misc/Definitions.pdf).
+
 + [Cartesian product](http://en.wikipedia.org/wiki/Cartesian_product)  
 + [direct product](http://en.wikipedia.org/wiki/Direct_product) and direct power  
 + [relation](http://en.wikipedia.org/wiki/Finitary_relation)  
