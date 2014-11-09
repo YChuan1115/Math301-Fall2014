@@ -2,6 +2,7 @@
 ### Section 39, Fall 2014
 
 + [Cartesian product](http://en.wikipedia.org/wiki/Cartesian_product)  
++ [direct product](http://en.wikipedia.org/wiki/Direct_product) and direct power  
 + [relation](http://en.wikipedia.org/wiki/Finitary_relation)  
 + [function](http://en.wikipedia.org/wiki/Function_(mathematics))  
 + [operation](http://en.wikipedia.org/wiki/Operation_(mathematics)) and   
@@ -102,5 +103,4 @@ generator (of a cyclic group)
 + [kernel](http://en.wikipedia.org/wiki/Kernel_(algebra)#Universal_algebra) of a homomorphism (a [congruence relation](http://en.wikipedia.org/wiki/Congruence_relation))  
 + [First Isomorphism theorem for groups](http://en.wikipedia.org/wiki/Isomorphism_theorem#Groups)  
 + [First Isomorphism theorem](http://en.wikipedia.org/wiki/Isomorphism_theorem#General) (general)  
-+ [direct product](http://en.wikipedia.org/wiki/Direct_product) and direct power  
 
