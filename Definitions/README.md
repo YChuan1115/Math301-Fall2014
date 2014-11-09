@@ -7,8 +7,7 @@ This page is a Markdown version of [the Definitions list](https://github.com/wil
 + [direct product](http://en.wikipedia.org/wiki/Direct_product) and direct power  
 + [relation](http://en.wikipedia.org/wiki/Finitary_relation)  
 + [function](http://en.wikipedia.org/wiki/Function_(mathematics))  
-+ [operation](http://en.wikipedia.org/wiki/Operation_(mathematics)) and   
-  [finitary operation](http://en.wikipedia.org/wiki/Finitary)  
++ [operation](http://en.wikipedia.org/wiki/Operation_(mathematics)) and [finitary operation](http://en.wikipedia.org/wiki/Finitary)  
 + [universe](http://en.wikipedia.org/wiki/Structure_(mathematical_logic)#Domain) or domain  
 + [arity](http://en.wikipedia.org/wiki/Arity) of relation, function, or operation
   (e.g., [nullary](http://en.wikipedia.org/wiki/Arity#Nullary),
