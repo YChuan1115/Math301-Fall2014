@@ -88,11 +88,11 @@ M-F 11/24-28: no class (Thanksgiving break)
 
 M 12/1: (Ch 16) introducing rings  
 W 12/3: (Ch 16) integral domains, fields  
-F 12/5: (Ch 16) ring homomorphisms, ideals  
+F 12/5: (Ch 16) ring homomorphisms
 
 ---------------------------------------------------------
-M 12/8: (Ch 16) maximal and prime ideals  
-W 12/10: Review for final exam  
+M 12/8: (Ch 16) ideals  
+W 12/10: (Ch 16) maximal and prime ideals  
 F 12/12: Review for final exam  
 
 ---------------------------------------------------------
