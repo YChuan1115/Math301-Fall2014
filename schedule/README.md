@@ -81,10 +81,10 @@ F 11/21: (Ch 14) group actions
 
 ---------------------------------------------------------
 M-F 11/24-28: no class (Thanksgiving break)   
+---------------------------------------------------------
 
 ## December
 
----------------------------------------------------------
 M 12/1: (Ch 16) introducing rings  
 W 12/3: (Ch 16) integral domains, fields  
 F 12/5: (Ch 16) ring homomorphisms, ideals  
