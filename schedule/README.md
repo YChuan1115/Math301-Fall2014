@@ -10,7 +10,7 @@ Students are advised to check this page often.
 ---------------------------------------------------------
 M 8/25: Course overview; intro to algebraic structures  
 W 8/27: (Ch 1) equivalence relations partial orders  
-F 8/29: (Ch 2) WOP and PMI; **HW 1 due**  
+F 8/29: (Ch 2) WOP and PMI  
 
 ## September
 
@@ -21,7 +21,7 @@ F 9/5: (Ch 2) primes numbers and prime factorizations
 
 ---------------------------------------------------------
 M 9/8: (Ch 2) FTA  
-W 9/10: magmas, semigroups, monoids; **HW 2 due**  
+W 9/10: magmas, semigroups, monoids  
 F 9/12: (Ch 3) intro to groups  
 
 ---------------------------------------------------------
