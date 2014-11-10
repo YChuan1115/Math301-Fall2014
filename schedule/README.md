@@ -80,9 +80,7 @@ W 11/19: (Ch 14) group actions
 F 11/21: (Ch 14) group actions  
 
 ---------------------------------------------------------
-M 11/24: no class (Thanksgiving break)   
-W 11/26:   
-F 11/28:   
+M-F 11/24-28: no class (Thanksgiving break)   
 
 ## December
 
