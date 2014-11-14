@@ -18,7 +18,7 @@
 \usepackage[colorinlistoftodos]{todonotes}
 
 % RSF's exerersises style
-\usepackage{exers}
+%\usepackage{exers}
 
  
 \raggedbottom
@@ -854,6 +854,23 @@ relation $R$ is denoted by $A/R$. That is,
   the kernel ``collapses'' these points into a single class, which we can
   represent either by $[y]$ or by $[z]$.  The choice is arbitrary, since they
   both denote the same equivalence class, namely $\{y, z\}$. 
+\end{example}
+
+\begin{example}
+  Suppose $\varphi: G \rightarrow H$ is a group homomorphism.  As above, the
+  kernel of $\varphi$ is
+  \[
+  \ker \varphi = \{(x, y) \in G \times G :  \varphi(x) = \varphi(y)\}
+  \]
+  This is an equivalence relation, to which there corresponds a partition of $G$
+  into equivalence classes.  Let $N_\varphi$ denote the equivalence class of
+  $\ker \varphi$ that contains the identity element $e_G$ of $G$.  
+  Since $\varphi$ is a homomorphism, $\varphi(e_G) = e_H$.  Therefore,
+  \begin{align*}
+    N_\varphi &=  \{x \in G :  \varphi(x) = \varphi(e_G)\}\\
+    &=  \{x \in G :  \varphi(x) = e_H\}\\
+    &=  \varphi^{-1}(\{e_H\}).
+  \end{align*}
 \end{example}
 
 
