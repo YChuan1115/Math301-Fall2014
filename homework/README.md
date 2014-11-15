@@ -47,3 +47,7 @@ not set in bold font are recommended but not required.
 10. **Chapter 10: 1abe, 5, 10, 11, 13acd** plus one additional exercise (see hw10.pdf file).  
    **Due: Wednesday, 11/05**
 
+11. **Chapter 11: 7, 11, 17, 18, 19**  
+	**Due: Friday, 11/21**
+
+
