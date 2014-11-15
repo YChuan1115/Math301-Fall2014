@@ -18,7 +18,7 @@
 \usepackage[colorinlistoftodos]{todonotes}
 
 % RSF's exerersises style
-\usepackage{exers}
+%\usepackage{exers}
 
  
 \raggedbottom
@@ -759,7 +759,6 @@ all $a_1, \dots a_{n}\in A$ the following equation holds:
 \]
 Then $\varphi$ is said to \emph{respect the interpretation of} $f$.
 If $\varphi$ respects the interpretation of every $f\in F$, 
-\index{homomorphism|textit}
 then we call $\varphi$ a \defn{homomorphism} from $\bA$ into $\bB$, and we write
 $\varphi \in \Hom(\bA, \bB)$, or simply, $\varphi: \bA \rightarrow \bB$.
 
@@ -856,7 +855,60 @@ relation $R$ is denoted by $A/R$. That is,
   both denote the same equivalence class, namely $\{y, z\}$. 
 \end{example}
 
+\begin{example}
+  Suppose $\varphi: G \rightarrow H$ is a group homomorphism.  As above, the
+  kernel of $\varphi$ is
+  \[
+  \ker \varphi = \{(x, y) \in G \times G :  \varphi(x) = \varphi(y)\}
+  \]
+  Since $\ker \varphi$ is an equivalence relation, $G$ is partitioned into
+  equivalence classes of $\ker \varphi$. 
+  Let $N_\varphi$ denote the equivalence class of
+  $\ker \varphi$ that contains the identity element $e_G$ of $G$.  That is,
+  $N_\varphi = e_G/\ker\varphi = \{x \in G :  (x, e_G) \in \ker \varphi\} =
+  \{x \in G :  \varphi(x) = \varphi(e_G)\}$.
+  Since $\varphi$ is a homomorphism, $\varphi(e_G) = e_H$.  Therefore,
+  % \begin{align*}
+  %   N_\varphi % &=  \{x \in G :  \varphi(x) = \varphi(e_G)\}\\
+  %   &=  \{x \in G :  \varphi(x) = e_H\}\\
+  %   &=  \varphi^{-1}(\{e_H\}).
+  % \end{align*}
+   $N_\varphi=  \{x \in G :  \varphi(x) = e_H\}=  \varphi^{-1}(\{e_H\})$.
 
+  \begin{lemma}
+  If $\varphi: G \rightarrow H$ is a group homomorphism, then 
+    $N_\varphi$ is a normal subgroup of $G$.
+  \end{lemma}
+  \begin{proof}
+    Fix $g \in G$ and $n\in N_\varphi$. Then
+    \begin{align*}
+    \varphi(g n g^{-1}) &= \varphi(g) \varphi(n) \varphi(g^{-1}) 
+    \quad (\text{since $\varphi$ is a homomorphism})\\
+    &= \varphi(g) e_H \varphi(g^{-1})
+    \quad (\text{since $n \in N_\varphi$, so  $(n, e_G) \in \ker\varphi$})\\
+    &= \varphi(g) \varphi(g^{-1})\\
+    &= \varphi(gg^{-1}) \qquad (\text{since $\varphi$ is a hom})\\
+    &= \varphi(e_G)
+    \end{align*}
+    Therefore, $g n g^{-1}\in N_\varphi$.
+  \end{proof}
+\end{example}
+
+  \begin{lemma}
+  Let $G$ be a group and let $N$ be a normal subgroup of $G$.
+  The function $\pi: G \rightarrow G/N$ defined by $\pi(g) = gN$ is a group
+  epimorphism. 
+  \end{lemma}
+  \begin{proof}
+    Exercise. %Fix $g \in G$ and $n\in N_\varphi$. Then
+  \end{proof}
+  \begin{theorem}[First Isomorphism Theorem]
+  If $\varphi: G \rightarrow H$ is a group homomorphism, then there is a unique
+  group homomrorphism $\psi : G/N \rightarrow H$ such that $\psi \pi =
+  \varphi$. 
+  \end{theorem}
+  The conclusion says that, for all $g\in G$, 
+  $\psi \pi(g) = \varphi(g)$ or $\psi(gN_\varphi) = \varphi(g)$.
 
 
 

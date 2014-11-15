@@ -66,18 +66,18 @@ F 10/31: (Ch 10) homomorphisms and the kernel
 
 ---------------------------------------------------------
 M 11/3: (Ch 11) isomorphisms  
-W 11/5: (Ch 11) isomorphism theorems  
-F 11/7: (Ch 11) isomorphism theorems  
+W 11/5: (Ch 11) first isomorphism theorem  
+F 11/7: (Ch 11) second isomorphism theorem  
 
 ---------------------------------------------------------
 M 11/10: midterm review  
 W 11/12: **Midterm Exam 2** (focus: Ch 6, 9--11, 19)  
-F 11/14: (Ch 13) fundamental theorem of finite abelian groups  
+F 11/14: (Ch 11) correspondence theorem  
 
 ---------------------------------------------------------
-M 11/17: (Ch 13) solvable groups  
-W 11/19: (Ch 14) group actions  
-F 11/21: (Ch 14) group actions  
+M 11/17: (Ch 14) group actions: orbits, stabilizers  
+W 11/19: (Ch 14) group actions: class equation, Burnside's Theorem
+F 11/21: (Ch 16) introducing rings 
 
 ---------------------------------------------------------
 M-F 11/24-28: no class (Thanksgiving break)   
