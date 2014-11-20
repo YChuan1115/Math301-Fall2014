@@ -903,13 +903,25 @@ relation $R$ is denoted by $A/R$. That is,
     Exercise. %Fix $g \in G$ and $n\in N_\varphi$. Then
   \end{proof}
   \begin{theorem}[First Isomorphism Theorem]
-  If $\varphi: G \rightarrow H$ is a group homomorphism, then there is a unique
-  group homomrorphism $\psi : G/N \rightarrow H$ such that $\psi \pi =
-  \varphi$. 
+  Suppose $\varphi: G \rightarrow H$ is a group homomorphism
+  and 
+  \[
+  N := \varphi^{-1}(\{e_H\}) = \{g\in G: \varphi(g) = e_H\}.
+  \]
+  Then there is a unique
+  group homomrorphism $\psi : G/N \rightarrow H$ such that 
+  $\psi \pi = \varphi$. 
   \end{theorem}
-  The conclusion says that, for all $g\in G$, 
-  $\psi \pi(g) = \varphi(g)$ or $\psi(gN_\varphi) = \varphi(g)$.
+  (The conclusion says that, for all $g\in G$, 
+  $\psi \pi(g) = \varphi(g)$ or $\psi(gN) = \varphi(g)$.)
+  %% If $\varphi: G \rightarrow H$ is a group homomorphism with
+  %% $N = \varphi^{-1}(\{e_H\})$, then there is a unique group homomrorphism 
+  %% $\psi : G/N \rightarrow H$ such that $\psi \pi = \varphi$. 
+  %% \end{theorem}
+  %% The conclusion says that, for all $g\in G$, 
+  %% $\psi \pi(g) = \varphi(g)$ or $\psi(gN_\varphi) = \varphi(g)$.
 
+  
 
 
 
