@@ -15,7 +15,7 @@
 
 \usepackage[mathcal]{euscript}
 
-\usepackage[colorinlistoftodos]{todonotes}
+%\usepackage[colorinlistoftodos]{todonotes}
 
 % RSF's exerersises style
 %\usepackage{exers}
@@ -236,23 +236,16 @@
 % this command is the exact same as \textit so I am eliminating it.
 % \newcommand{\ii}[1]{{\it #1}}
 
-\makeindex
+%% \makeindex
 
-\usepackage[myheadings]{fullpage}
-%\usepackage{fullpage}
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\headheight=14pt
-
-%% \title{{\sc Algebra Notes}}
-%% \author{William DeMeo and Ralph Freese}
-
-%% \date{\today}
+%% \usepackage[myheadings]{fullpage}
+%% %\usepackage{fullpage}
+%% \usepackage{fancyhdr}
+%% \pagestyle{fancy}
+%% \headheight=14pt
 
 
 \begin{document}
-%% \maketitle
-%% \tableofcontents
 
 \pagestyle{fancy}
 
@@ -797,33 +790,47 @@ Indeed, for all $g \in G$,
 \end{align*}
 \end{example}
 
-\section{Isomorphism Theorems}
+\section{Group Isomorphism Theorems}
+This section covers the group theoretic versions of what are
+sometimes called the \emph{Noether isomorphism theorems}.\footnote{\href{http://en.wikipedia.org/wiki/Emmy_Noether}{Emmy Noether}
+(23 Mar 1882 -- 14 Apr 1935), was an influential German mathematician known
+  for her groundbreaking contributions to abstract algebra and theoretical
+  physics.  Ring theoretic versions of Noether's isomorphism theorems appeared
+  in her 1927 paper~\cite{Noether:1927}.}
+Analogs of these theorems exist for other algebraic
+structures (such as rings). More generally the theorems
+can be stated in a way that makes them true for all algebraic structures.  
+
+To keep the presentation simple, we begin by stating the special
+versions of the theorems that apply to groups.  However, in anticipation of 
+the more general versions to come, we introduce some terminology
+that will make the transition to a more general context smoother. 
+For now the reader will have to trust that carrying around this slightly heavier
+baggage at the start will pay off in the end. 
+
+
+\subsection{The kernel: equivalence relation or subgroup?}
 Let $A$ and $B$ be sets and let $\varphi : A\rightarrow B$ be a function.
-\index{kernel!of a relation}
-We say that a pair $(a_0, a_1)\in A^2$ belongs to the \defn{kernel} of $\varphi$, and we
-write $(a_0, a_1) \in \ker \varphi$, just in case
-$\varphi(a_0)=\varphi(a_1)$.  Thus, to every function $\varphi$ there corresponds a
-binary relation $\ker \varphi$, defined by 
+We say that a pair $(a_0, a_1)\in A^2$ belongs to the \defn{kernel} of
+$\varphi$, and we write $(a_0, a_1) \in \ker \varphi$, just in case
+$\varphi(a_0)=\varphi(a_1)$.  Thus, to every function $\varphi :A \rightarrow B$ there corresponds a
+binary relation %% $\ker \varphi$, defined 
+on $A$ given by 
 \[
 (a_0, a_1) \in \ker \varphi \qquad \Longleftrightarrow \qquad \varphi(a_0) = \varphi(a_1).
 \]
-%% In place of $\ker \varphi$, we occationally write $\sim_\varphi$, or simply
-%% $\sim$ when the context makes clear to which $\varphi$ the relation
-%% corresponds. This makes complicated expressions easier to 
-%% read.\footnote{Compare $a_0 \mathrel{\ker \varphi} a_1$ 
-%% and $(a_0, a_1) \in \ker \varphi$ to the (semantically equivalent) expression
-%% $a_0 \mathrel{\sim} a_1$.}
+
 The proof of the next proposition is an easy exercise.
   \begin{prop}\label{prop:1}
     $\ker \varphi$ is an equivalence relation on the domain of $\varphi$.
   \end{prop}
-%\begin{exercise}  Prove proposition \ref{prop:1}. \end{exercise}
+\begin{exercise}  Prove proposition \ref{prop:1}. \end{exercise}
 Each equivalence relation $R$ on a set $A$ partitions that set into ``blocks'' or
 \emph{equivalence classes}.  
 Given an element $a_1\in A$, we denote the equivalence class containing $a_1$ by
 $a_1/R$, or by $[a_1]$ when the latter 
-seems more convenient. Thus, we here are some alternative ways to write the 
-equivalence class of $R$ that contains $a_1$:
+seems more convenient. Thus, a few alternative ways to write the 
+equivalence class of $R$ that contains $a_1$ are as follows:
 \[a_1/R = \{ a_2 \in A \mid a_1 \mathrel{R} a_2\} = \{ a_2 \in A \mid (a_1, a_2)\in R\} = [a_1].
 \]
 The set of all equivalence classes of a given
@@ -858,59 +865,114 @@ relation $R$ is denoted by $A/R$. That is,
 \begin{example}
   Suppose $\varphi: G \rightarrow H$ is a group homomorphism.  As above, the
   kernel of $\varphi$ is
-  \[
+  \begin{equation}
+    \label{eq:1}
   \ker \varphi = \{(x, y) \in G \times G :  \varphi(x) = \varphi(y)\}
-  \]
+  \end{equation}
   Since $\ker \varphi$ is an equivalence relation, $G$ is partitioned into
   equivalence classes of $\ker \varphi$. 
-  Let $N_\varphi$ denote the equivalence class of
+  Let $K_\varphi$ denote the equivalence class of
   $\ker \varphi$ that contains the identity element $e_G$ of $G$.  That is,
-  $N_\varphi = e_G/\ker\varphi = \{x \in G :  (x, e_G) \in \ker \varphi\} =
-  \{x \in G :  \varphi(x) = \varphi(e_G)\}$.
-  Since $\varphi$ is a homomorphism, $\varphi(e_G) = e_H$.  Therefore,
-  % \begin{align*}
-  %   N_\varphi % &=  \{x \in G :  \varphi(x) = \varphi(e_G)\}\\
-  %   &=  \{x \in G :  \varphi(x) = e_H\}\\
-  %   &=  \varphi^{-1}(\{e_H\}).
-  % \end{align*}
-   $N_\varphi=  \{x \in G :  \varphi(x) = e_H\}=  \varphi^{-1}(\{e_H\})$.
-
-  \begin{lemma}
-  If $\varphi: G \rightarrow H$ is a group homomorphism, then 
-    $N_\varphi$ is a normal subgroup of $G$.
-  \end{lemma}
-  \begin{proof}
-    Fix $g \in G$ and $n\in N_\varphi$. Then
-    \begin{align*}
-    \varphi(g n g^{-1}) &= \varphi(g) \varphi(n) \varphi(g^{-1}) 
-    \quad (\text{since $\varphi$ is a homomorphism})\\
-    &= \varphi(g) e_H \varphi(g^{-1})
-    \quad (\text{since $n \in N_\varphi$, so  $(n, e_G) \in \ker\varphi$})\\
-    &= \varphi(g) \varphi(g^{-1})\\
-    &= \varphi(gg^{-1}) \qquad (\text{since $\varphi$ is a hom})\\
-    &= \varphi(e_G)
-    \end{align*}
-    Therefore, $g n g^{-1}\in N_\varphi$.
-  \end{proof}
-\end{example}
-
-  \begin{lemma}
-  Let $G$ be a group and let $N$ be a normal subgroup of $G$.
-  The function $\pi: G \rightarrow G/N$ defined by $\pi(g) = gN$ is a group
-  epimorphism. 
-  \end{lemma}
-  \begin{proof}
-    Exercise. %Fix $g \in G$ and $n\in N_\varphi$. Then
-  \end{proof}
-  \begin{theorem}[First Isomorphism Theorem]
-  Suppose $\varphi: G \rightarrow H$ is a group homomorphism
-  and 
   \[
-  N := \varphi^{-1}(\{e_H\}) = \{g\in G: \varphi(g) = e_H\}.
+  K_\varphi = e_G/\ker\varphi = \{x \in G :  (x, e_G) \in \ker \varphi\} =
+  \{x \in G :  \varphi(x) = \varphi(e_G)\} = [e_G].
   \]
-  Then there is a unique group isomorphism $\psi : G/N \rightarrow \varphi(G)$ such
-  that $\psi \pi = \varphi$. 
+  Since $\varphi$ is a homomorphism, $\varphi(e_G) = e_H$.  Therefore,
+   \[
+   K_\varphi=  \{x \in G :  \varphi(x) = e_H\} =  \varphi^{-1}(\{e_H\}).
+   \]
+\end{example}
+\begin{exercise}  Let $\varphi: G \rightarrow H$ be a group homomorphism.
+  \begin{enumerate}
+  \item 
+    Prove that $K_\varphi$ %% = \varphi^{-1}(\{e_H\})$
+    is a normal subgroup of $G$.  
+  \item 
+    Recall that an equivalence on $G$ partitions $G$ into disjoint equivalence
+    classes.  Show that the equivalence classes of $\ker \varphi$ are precisely the
+    left cosets of $K_\varphi$ in $G$; that is $\ker \varphi$ partitions $G$ into 
+    the disjoint union,
+    \[
+    G = K_\varphi \cup g_1K_\varphi \cup g_2K_\varphi\cup \cdots.
+    \]
+  \end{enumerate}
+\end{exercise}
+
+\noindent  {\bf A note on terminology.} Our textbook, and most other elementary
+  books on classical algebra, calls the subgroup $K_\varphi$ described above
+  the ``kernel'' of $\varphi$. 
+  This terminology is useful in the context of certain
+  special classes of algebraic structures, such as groups or rings.  However, 
+  to treat algebraic structures more generally requires
+  the definition of kernel given in~(\ref{eq:1}).
+
+  Since the two definitions of ``kernel'' serve different purposes, and since
+  neither is dispensible, we must agree on a convention that will allow us to
+  speak about these two notions without causing confusion.
+  \begin{itemize}
+  \item we say ``kernel relation'' and write $\ker \varphi$ to 
+    refer to the equivalence relation defined in~(\ref{eq:1});
+  \item we say ``kernel subgroup'' and write $K_\varphi$ to
+    refer to the equivalence class of $\ker \varphi$ containing the
+    identity.
+  \end{itemize}
+  We refrain from using the term ``kernel'' without qualification, unless it is
+  obvious that we are referring to an equivalence relation and not a subgroup
+  (or vice-versa).
+
+  To summarize, if $\varphi$ is any function from a set $G$ to a set $H$, then the
+  \defn{kernel relation} is $\ker \varphi = \{(x, y) \in G \times G :
+  \varphi(x) = \varphi(y)\}$. 
+  In the special case when $G$ and $H$ are groups and $\varphi$ is a group
+  homomorphism, then we can speak of the \defn{kernel subgroup}, 
+  $K_\varphi = \{x \in G: \varphi(x) = e_H\}$.
+
+
+%%   \begin{lemma}
+%%   If $\varphi: G \rightarrow H$ is a group homomorphism, then the kernel
+%%   subgroup $K_\varphi$ is a normal subgroup of $G$.
+%%   \end{lemma}
+%%   \begin{proof}
+%%     Fix $g \in G$ and $n\in N_\varphi$. Then
+%%     \begin{align*}
+%%     \varphi(g n g^{-1}) &= \varphi(g) \varphi(n) \varphi(g^{-1}) 
+%%     \quad (\text{since $\varphi$ is a homomorphism})\\
+%%     &= \varphi(g) e_H \varphi(g^{-1})
+%%     \quad (\text{since $n \in N_\varphi$, so  $(n, e_G) \in \ker\varphi$})\\
+%%     &= \varphi(g) \varphi(g^{-1})\\
+%%     &= \varphi(gg^{-1}) \qquad (\text{since $\varphi$ is a homomorphism})\\
+%%     &= \varphi(e_G)
+%%     \end{align*}
+%%     Therefore, $g n g^{-1}\in N_\varphi$.
+%%   \end{proof}
+%% \end{example}
+
+  %% \begin{theorem}[First Isomorphism Theorem]
+  %% Suppose $\varphi: G \rightarrow H$ is a group homomorphism
+  %% and 
+  %% \[
+  %% N := \varphi^{-1}(\{e_H\}) = \{g\in G: \varphi(g) = e_H\}.
+  %% \]
+  %% Then there is a unique group isomorphism $\psi : G/N \rightarrow \varphi(G)$ such
+  %% that $\psi \pi = \varphi$. 
+  %% \end{theorem}
+
+  \begin{theorem}[First Isomorphism Theorem]
+  Suppose $\varphi: G \rightarrow H$ is a group homomorphism.
+  Then,
+  \begin{enumerate}
+  \item $K_\varphi = \varphi^{-1}(\{e_H\})$ is a normal subgroup of $G$;
+  \item the image of $G$ under $\varphi$ is a subgroup of $H$;
+  \item the factor group $G/K_\varphi$ is isomorphic to
+    the image of $G$ under $\varphi$. 
+  \end{enumerate}
   \end{theorem}
+\noindent In other terms, if $\varphi: G \rightarrow H$ is a homomorphism, then
+  \[
+  K_\varphi \triangleleft G, \quad \varphi(G)\leq H, \quad G/K_\varphi\cong
+  \varphi(G).
+  \]
+
   %% (The conclusion says that, for all $g\in G$, 
   %% $\psi \pi(g) = \varphi(g)$ or $\psi(gN) = \varphi(g)$.)
   %% If $\varphi: G \rightarrow H$ is a group homomorphism with
@@ -920,71 +982,120 @@ relation $R$ is denoted by $A/R$. That is,
   %% The conclusion says that, for all $g\in G$, 
   %% $\psi \pi(g) = \varphi(g)$ or $\psi(gN_\varphi) = \varphi(g)$.
 
+  \begin{lemma}
+\label{lem:canonicalepi}
+  Suppose $N$ is a normal subgroup of $G$. Then the function 
+  $\pi: G \rightarrow G/N$ defined by $\pi(g) = gN$ is a group epimorphism with
+  kernel subgroup $K_\pi = N$. 
+  \end{lemma}
+  \noindent (Recall, an \emph{epimorphism} is an onto homomorphism.)
+
+  \begin{exercise}  Prove Lemma~\ref{lem:canonicalepi}.
+  \end{exercise}
+
   
+  \begin{theorem}[Second Isomorphism Theorem]
+    Let $G$ be a group with subgroups $H$ and $N$, and suppose that $N$ is a
+    normal subgroup of $G$. Then 
+    \begin{enumerate}
+    \item $H N$ is a subgroup of $G$;
+    \item $H\cap N$ is a normal subgroup of $H$;
+    \item $HN/N \cong H/H\cap N$.
+    \end{enumerate}
+  \end{theorem}
 
 
-
-
-\subsection{Congruence Relations}
-
-Let $\bA = \< A, F^\bA \>$ and $\bB = \<B, F^\bB\>$ be algebras of the same type
-and let $\varphi : A \rightarrow B$ be a homomorphism.  As above, 
-$\varphi$ determines an equivalence relation $\sim_\varphi = \ker \varphi$ on $A$.
-\index{congruence relation|textit}
-Such equivalence relations are called \emph{congruence relations}.
-That is, a \defn{congruence relation} on $\bA$ is the kernel of 
-a %% an equivalence relation $\sim_\varphi$
-%% arising from a 
-\emph{homomorphism} $\varphi : \bA \rightarrow \bB$, for some algebra
-$\bB$.  We denote the set of all congruence relations on $\bA$ by $\Con \bA$.
-
-To reiterate, $\theta \in \Con \bA$ if and only if $\theta = \ker \varphi$ for some 
-homomorphism $\varphi$ of $\bA$.  There is an alternative but equivalent way to
-define congruence relation of an algebra---namely, \emph{a congruence relation
-is an equivalence relation that is respected by all operations of the algebra.}
-That is, $\theta \in \Eq(A)$ and for every operation $f\in F$ 
-(say, $n$-ary) we have
-\begin{equation}
-\label{eq:cong-re}
-(x_i, y_i) \in \theta \; (1\leq i \leq n) \quad \Longrightarrow \quad 
-(f(x_1, \dots, x_{n}), f(y_1, \dots, y_{n})) \in \theta,
-\end{equation}
-for all $x_1, \dots, x_{n}, y_1, \dots, y_{n} \in A$.\footnote{Another way to
-  say this is $\Con \bA = \Eq(A) \cap \Sub(\bA\times \bA)$.
-The direct product algebra $\bA \times \bA$ is defined in section~\ref{sec:directproducts}.}
-We record this fact as
-\begin{theorem}
-  \label{thm:cong-rel}
-  Suppose $\bA = \algebra{A, F}$ is an algebra and $\theta$ is an equivalence
-  relation on the set $A$.  Then $\theta$ is congruence relation on the algebra
-  $\bA$ if and only if %(for every $n$ in the similarity type of $\bA$) 
-  for every $n$-ary basic operation $f\in F$  and for all
-  $a_0, \dots, a_{n-1}, a_0', \dots, a_{n-1}' \in A$,
-  \[
-  x_i \rel{\theta} y_i \; (1\leq i \leq n) \quad \Longrightarrow \quad 
-  f(x_1, \dots, x_{n}) \rel{\theta} f(y_1, \dots, y_{n}).
-  \]
+ 
+\begin{theorem}[Correspondence Theorem]\label{CorrespondTheorem}\index{Correspondence Theorem!for groups}
+Let $N$ be a normal subgroup of a group $G$. Then the map
+$H \mapsto H/N$
+is a one-to-one correspondence between the set of subgroups of $G$ that contain 
+$N$ and the set of subgroups of $G/N$. That is,
+\[
+\Sub(G) \; \ni \; H \; \longleftrightarrow \; H/N \; \in \; \Sub(G/N).
+\]
+Moreover, the
+normal subgroups of $G$ containing $N$ correspond to normal subgroups of~$G/N$. 
 \end{theorem}
-  In fact, we can replace the final implication in the theorem with: for each $1
-  \leq i \leq n$,
-  \[
-  x_i\rel{\theta} y_i   \quad \Longrightarrow \quad 
-  f(x_1, \dots, x_i, \dots x_{n})\rel{\theta} f(y_1, \dots,
-  y_i, \dots, y_{n}).
-  \]
-  \underline{Proof sketch:} Recall that $a/\theta$ denotes the equivalence class of
-  $\theta$ which contains $a$, and $A/\theta$ denotes the full set of $\theta$
-  classes: $A/\theta= \{a/\theta : a\in A\}$.  For every
-  operation $f^\bA$ on $A$ (say $n$-ary), \emph{define} an operation on
-  $A/\theta$ as follows:
-  \[
-  f^{\bA/\theta}(a_1/\theta, \dots, a_n/\theta) := f^\bA(a_1, \dots, a_n)/\theta. 
-  \]
-  One easily checks that this is well-defined and that the map 
-  $a \mapsto a/\theta$ is a homomorphism of $\bA$ onto the algebra 
-  $\bA/\theta := \<A/\theta, F^{\bA/\theta}\>$, where 
-  $F^{\bA/\theta} := \{f^{\bA/\theta} : f^\bA \in F\}$.  Finally, note that the
-  kernel of this homomorphism is $\theta$.
+
+ % Statement of the Correspondence Theorem corrected.  Suggested by P. Diethelm.  TWJ 16/8/2013.
+ 
+ 
+\begin{proof}
+Let $H$ be a subgroup of $G$ containing $N$. Since $N$ is normal in
+$H$, $H/N$ makes sense.  Let $aN$ and $bN$ be elements of $H/N$. Then
+$(aN)( b^{-1} N )= ab^{-1}N \in H/N$; hence, $H/N$ is a subgroup of
+$G/N$. 
+
+
+Let $S$ be a subgroup of $G/N$. This subgroup is a set of cosets of
+$N$.  If  $H= \{ g \in G : gN \in S \}$, then for $h_1, h_2 \in H$, we
+have that $(h_1 N)( h_2 N )= h_1 h_2 N \in S$ and $h_1^{-1} N \in S$.
+Therefore, $H$ must be a subgroup of $G$. Clearly, $H$ contains $N$.
+Therefore, $S = H / N$. Consequently, the map  $H \mapsto H/N$ is
+onto. 
+
+% Notation error corrected.  Suggested by P. Diethelm.  TWJ 16/8/2013.
+    
+Suppose that $H_1$ and $H_2$ are subgroups of $G$ containing $N$ such
+that $H_1/N = H_2/N$. If $h_1 \in H_1$, then $h_1 N \in H_1/N$. Hence,
+$h_1 N = h_2 N \subset H_2$ for some $h_2$ in $H_2$. However, since
+$N$ is contained in $H_2$, we know that $h_1 \in H_2$ or $H_1 \subset
+H_2$. Similarly, $H_2 \subset H_1$.  Since $H_1 = H_2$, the map  $H
+\mapsto H/N$ is one-to-one. 
+
+%H/N changed to N/H.  Suggested by S. Engle.
+%TWJ - 12/19/2011
+
+%Changed it back.  What was I thinking?  Suggested by R. Beezer.
+%TWJ - 11/29/2012
+
+
+ 
+Suppose that $H$ is normal in $G$ and $N$ is a subgroup of $H$.  Then
+it is easy to verify that the map $G/N \rightarrow G/H$ defined by $gN
+\mapsto gH$ is  a homomorphism.  The kernel of this homomorphism is
+$H/N$, which proves that $H/N$ is normal in $G/N$. 
+ 
+ 
+Conversely, suppose that $H/N$ is normal in $G/N$. The homomorphism
+given by 
+\[
+G \rightarrow G/N \rightarrow \frac{G/N}{H/N}
+\]
+has kernel $H$. Hence, $H$ must be normal in $G$.
+\end{proof}
+ 
+\medskip
+ 
+ 
+Notice that in the course of the proof of Theorem~\ref{CorrespondTheorem}, we have also
+proved the following theorem. 
+ 
+
+
+
+  \begin{theorem}[Third Isomorphism Theorem]
+    Let $N \leq H \leq G$ be a chain of groups and suppose $N$ and $H$ are both
+    normal in $G$. Then,
+    \[
+    G/H \cong \frac{G/N}{H/N}.
+    \]
+  \end{theorem}
+ 
+ 
+  \begin{example}
+    Fix two integers $m, n \in \Z$.  By the Third Isomorphism Theorem,
+    \[
+      {\mathbb Z} / m {\mathbb Z} \cong ({\mathbb Z}/ mn {\mathbb Z})/ (m {\mathbb Z}/ mn
+      {\mathbb Z}). 
+      \]
+      Since $| {\mathbb Z} / mn {\mathbb Z} | = mn$ and  
+      $|{\mathbb Z} / m{\mathbb Z}| = m$, 
+      we have $| m {\mathbb Z} / mn {\mathbb Z}| = n$. 
+  \end{example}
+ 
+
 
 \section{Quotient Algebras}
 \index{quotient algebra}
@@ -1374,6 +1485,14 @@ $H$ does what we want: Given any $y \in B$, we have $(y,H(y)) \in F^{-1}$ hence
 $(H(y), y) \in F$, and so $F(H(y)) = y$.
 \qed
 
+\bibliographystyle{plain}
+\bibliography{wjd}
+\printindex
+
+\end{document}
+
+
+
 
 
 \section{Notation}
@@ -1396,11 +1515,6 @@ $(H(y), y) \in F$, and so $F(H(y)) = y$.
 \item $\Q$, the set of rational numbers.
 \end{itemize}
 
-\bibliographystyle{plain}
-\bibliography{notes}
-\printindex
-
-\end{document}
 
 
 
@@ -1419,11 +1533,66 @@ $(H(y), y) \in F$, and so $F(H(y)) = y$.
 
 
 
+\subsection{Congruence Relations}
 
+Let $\bA = \< A, F^\bA \>$ and $\bB = \<B, F^\bB\>$ be algebras of the same type
+and let $\varphi : A \rightarrow B$ be a homomorphism.  As above, 
+$\varphi$ determines an equivalence relation $\sim_\varphi = \ker \varphi$ on $A$.
+\index{congruence relation|textit}
+Such equivalence relations are called \emph{congruence relations}.
+That is, a \defn{congruence relation} on $\bA$ is the kernel of 
+a %% an equivalence relation $\sim_\varphi$
+%% arising from a 
+\emph{homomorphism} $\varphi : \bA \rightarrow \bB$, for some algebra
+$\bB$.  We denote the set of all congruence relations on $\bA$ by $\Con \bA$.
 
-
-
-
+To reiterate, $\theta \in \Con \bA$ if and only if $\theta = \ker \varphi$ for some 
+homomorphism $\varphi$ of $\bA$.  There is an alternative but equivalent way to
+define congruence relation of an algebra---namely, \emph{a congruence relation
+is an equivalence relation that is respected by all operations of the algebra.}
+That is, $\theta \in \Eq(A)$ and for every operation $f\in F$ 
+(say, $n$-ary) we have
+\begin{equation}
+\label{eq:cong-re}
+(x_i, y_i) \in \theta \; (1\leq i \leq n) \quad \Longrightarrow \quad 
+(f(x_1, \dots, x_{n}), f(y_1, \dots, y_{n})) \in \theta,
+\end{equation}
+for all $x_1, \dots, x_{n}, y_1, \dots, y_{n} \in A$.\footnote{Another way to
+  say this is $\Con \bA = \Eq(A) \cap \Sub(\bA\times \bA)$.
+The direct product algebra $\bA \times \bA$ is defined in section~\ref{sec:directproducts}.}
+We record this fact as
+\begin{theorem}
+  \label{thm:cong-rel}
+  Suppose $\bA = \algebra{A, F}$ is an algebra and $\theta$ is an equivalence
+  relation on the set $A$.  Then $\theta$ is congruence relation on the algebra
+  $\bA$ if and only if %(for every $n$ in the similarity type of $\bA$) 
+  for every $n$-ary basic operation $f\in F$  and for all
+  $a_0, \dots, a_{n-1}, a_0', \dots, a_{n-1}' \in A$,
+  \[
+  x_i \rel{\theta} y_i \; (1\leq i \leq n) \quad \Longrightarrow \quad 
+  f(x_1, \dots, x_{n}) \rel{\theta} f(y_1, \dots, y_{n}).
+  \]
+\end{theorem}
+  In fact, we can replace the final implication in the theorem with: for each $1
+  \leq i \leq n$,
+  \[
+  x_i\rel{\theta} y_i   \quad \Longrightarrow \quad 
+  f(x_1, \dots, x_i, \dots x_{n})\rel{\theta} f(y_1, \dots,
+  y_i, \dots, y_{n}).
+  \]
+  \underline{Proof sketch:} Recall that $a/\theta$ denotes the equivalence class of
+  $\theta$ which contains $a$, and $A/\theta$ denotes the full set of $\theta$
+  classes: $A/\theta= \{a/\theta : a\in A\}$.  For every
+  operation $f^\bA$ on $A$ (say $n$-ary), \emph{define} an operation on
+  $A/\theta$ as follows:
+  \[
+  f^{\bA/\theta}(a_1/\theta, \dots, a_n/\theta) := f^\bA(a_1, \dots, a_n)/\theta. 
+  \]
+  One easily checks that this is well-defined and that the map 
+  $a \mapsto a/\theta$ is a homomorphism of $\bA$ onto the algebra 
+  $\bA/\theta := \<A/\theta, F^{\bA/\theta}\>$, where 
+  $F^{\bA/\theta} := \{f^{\bA/\theta} : f^\bA \in F\}$.  Finally, note that the
+  kernel of this homomorphism is $\theta$.
 
 
 

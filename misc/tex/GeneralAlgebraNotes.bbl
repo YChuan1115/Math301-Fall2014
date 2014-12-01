@@ -1,8 +1,18 @@
+\def\cprime{$'$} \def\cprime{$'$} \def\cprime{$'$}
+  \def\ocirc#1{\ifmmode\setbox0=\hbox{$#1$}\dimen0=\ht0 \advance\dimen0
+  by1pt\rlap{\hbox to\wd0{\hss\raise\dimen0
+  \hbox{\hskip.2em$\scriptscriptstyle\circ$}\hss}}#1\else {\accent"17 #1}\fi}
 \begin{thebibliography}{1}
 
 \bibitem{Enderton:1977}
 Herbert~В Enderton.
 \newblock {\em Elements of set theory}.
 \newblock Academic Press, 1977.
+
+\bibitem{Noether:1927}
+Emmy Noether.
+\newblock {A}bstrakter {A}ufbau der {I}dealtheorie in algebraischen {Z}ahl- und
+  {F}unktionenk\"{o}rpern.
+\newblock {\em Mathematische Annalen}, 96:26--61, 1927.
 
 \end{thebibliography}
