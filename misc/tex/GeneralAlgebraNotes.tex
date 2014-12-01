@@ -1011,6 +1011,60 @@ relation $R$ is denoted by $A/R$. That is,
     Prove the First Isomorphism Theorem.
   \end{exercise}
 
+
+    \begin{exercise}
+      Suppose $K$ and $L$ are normal subgroups of $G$. Prove that $G/K\cap L$ is
+      isomorphic to a subgroup of $G/K \times G/L$ (the external direct
+      product),\footnote{Note 
+      that the expression $G/K\cap L$ can only be interpreted as $G/(K\cap L)$,
+      since $(G/K)\cap L$ doesn't make sense.} and compute the index
+      of this subgroup in $G/K \times G/L$, 
+      in terms of $[G:K]$, $[G:L]$, and $[G:KL]$.
+    \end{exercise}
+
+  \ifthenelse{\boolean{includeSolutions}}{
+    \begin{solution}
+      Define the natural mapping
+        \[
+        G/K\cap L \ni g(K\cap L) \mapsto (gK, gL) \in G/K \times G/L.
+        \]
+        We must check that this mapping is well-defined and one-to-one, as follows:
+        \begin{align*}
+          x(K\cap L) =y(K\cap L)  \quad&  \Leftrightarrow \quad x^{-1}y \in K\cap L\\
+          & \Leftrightarrow \quad  x^{-1}y \in K \; \text{ and } \; x^{-1}y \in L\\
+          & \Leftrightarrow \quad xK = yK \;\text{ and } \; xL = yL\\
+          & \Leftrightarrow \quad (xK, xL) = (yK, yL).
+        \end{align*}
+        To be clear, the forward implications $(\Rightarrow)$ prove well-definedness,
+        the reverse implications $(\Leftarrow)$ one-to-oneness. Also, it is important to
+        note that these calculations take $G/K$, $G/L$, and $G/K\cap L$ to be \emph{groups},
+        with multiplications given by $xK yK = xyK$, etc.  This requires that the
+        subgroups $K$ and $L$, and hence $K\cap L$, be normal.  If, for example, $K$
+        were not normal, then $G/K$ would not be a group.
+   
+        It remains to check that the mapping is a homomorphism.  Let $\varphi$ denote
+        the mapping, and  fix two cosets $x(K\cap L)$ and $y(K\cap L)$ in $G/(K\cap L)$.  Then
+        \begin{align*}
+        \varphi(x(K\cap L) y(K\cap L)) &= \varphi(xy(K\cap L)) = (xyK,
+        xyL)=(xKyK,xLyL)\\[4pt]
+        &=(xK,xL)\,(yK,yL) = \varphi(x(K\cap L))\,\varphi(y(K\cap L)).
+        \end{align*}
+        By exhibiting a monomorphism $\varphi: G/K\cap L \hookrightarrow
+        G/K \times G/L$, we have proved that $G/K\cap L$ can be embedded as a
+        subgroup in $G/K \times G/L$.
+
+        The index of $G/K\cap L$ in $G/K \times G/L$, in terms of $[G:K], [G:L]$ and
+        $[G:K\cap L]$, is
+        \[
+        |(G/K \times G/L)|/ |G/K\cap L| = \frac{(|G|/|K|) (|G|/|L|)}{|G|/|K\cap L|}
+        = \frac{[G:K] [G:L]}{[G:K\cap L]}.
+        \]
+        \qed
+    \end{solution}}{}
+
+
+
+
   \begin{theorem}[Second Isomorphism Theorem]
     Let $G$ be a group with subgroups $H$ and $N$, and suppose that $N$ is a
     normal subgroup of $G$. Then 
