@@ -1,5 +1,6 @@
 \documentclass[12pt]{article}
 \usepackage{enumerate,amsmath,amssymb,mathrsfs,amscd,stmaryrd,amsthm}
+\usepackage[margin=1.2in]{geometry}
 %\usepackage{enumerate,amsmath,amssymb,mathrsfs,amscd,amsthm}
 \usepackage{marvosym}
 \usepackage{makeidx}
@@ -20,6 +21,11 @@
 % RSF's exerersises style
 %\usepackage{exers}
 
+% -------  INCLUSION OF SOLUTIONS --------------------
+\usepackage{ifthen}
+\newboolean{includeSolutions}
+%\setboolean{includeSolutions}{true}
+\setboolean{includeSolutions}{false}
  
 \raggedbottom
 
@@ -35,7 +41,7 @@
 \newtheorem{examples}[theorem]{Example}
 %\newtheorem{exercise}[theorem]{{\LARGE \Bicycle} Exercise}
 %\newtheorem{exers}[theorem]{{\LARGE \Bicycle} Exercises}
-\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{exercise}{Exercise}
 \newtheorem{exers}[theorem]{Exercises}
 \theoremstyle{remark}
 \newtheorem*{notation}{Notation}
@@ -247,7 +253,7 @@
 
 \begin{document}
 
-\pagestyle{fancy}
+%%\pagestyle{fancy}
 
 %\newpage
 
@@ -790,7 +796,7 @@ Indeed, for all $g \in G$,
 \end{align*}
 \end{example}
 
-\section{Group Isomorphism Theorems}
+\section{Isomorphism Theorems}
 This section covers the group theoretic versions of what are
 sometimes called the \emph{Noether isomorphism theorems}.\footnote{\href{http://en.wikipedia.org/wiki/Emmy_Noether}{Emmy Noether}
 (23 Mar 1882 -- 14 Apr 1935), was an influential German mathematician known
@@ -905,26 +911,27 @@ relation $R$ is denoted by $A/R$. That is,
   special classes of algebraic structures, such as groups or rings.  However, 
   to treat algebraic structures more generally requires
   the definition of kernel given in~(\ref{eq:1}).
-
   Since the two definitions of ``kernel'' serve different purposes, and since
   neither is dispensible, we must agree on a convention that will allow us to
-  speak about these two notions without causing confusion.
+  speak about these two notions without causing confusion. From now on, 
   \begin{itemize}
-  \item we say ``kernel relation'' and write $\ker \varphi$ to 
-    refer to the equivalence relation defined in~(\ref{eq:1});
-  \item we say ``kernel subgroup'' and write $K_\varphi$ to
-    refer to the equivalence class of $\ker \varphi$ containing the
+  \item ``kernel relation'' and $\ker \varphi$
+    will refer to the equivalence relation defined in~(\ref{eq:1});
+  \item ``kernel subgroup'' and $K_\varphi$
+    will refer to the equivalence class of $\ker \varphi$ containing the
     identity.
   \end{itemize}
   We refrain from using the term ``kernel'' without qualification, unless it is
   obvious that we are referring to an equivalence relation and not a subgroup
   (or vice-versa).
 
-  To summarize, if $\varphi$ is any function from a set $G$ to a set $H$, then the
+  To summarize, if $\varphi: G \rightarrow H$ is a function from a set $G$ to
+  a set $H$, then the 
   \defn{kernel relation} is $\ker \varphi = \{(x, y) \in G \times G :
   \varphi(x) = \varphi(y)\}$. 
-  In the special case when $G$ and $H$ are groups and $\varphi$ is a group
-  homomorphism, then we can speak of the \defn{kernel subgroup}, 
+  In the special case when $G$ and $H$ are groups and 
+  $\varphi: G \rightarrow H$ is a group
+  homomorphism, then we may speak of the \defn{kernel subgroup}, 
   $K_\varphi = \{x \in G: \varphi(x) = e_H\}$.
 
 
@@ -957,6 +964,7 @@ relation $R$ is denoted by $A/R$. That is,
   %% that $\psi \pi = \varphi$. 
   %% \end{theorem}
 
+\subsection{Group Isomorphism Theorems}
   \begin{theorem}[First Isomorphism Theorem]
   Suppose $\varphi: G \rightarrow H$ is a group homomorphism.
   Then,
@@ -982,18 +990,27 @@ relation $R$ is denoted by $A/R$. That is,
   %% The conclusion says that, for all $g\in G$, 
   %% $\psi \pi(g) = \varphi(g)$ or $\psi(gN_\varphi) = \varphi(g)$.
 
-  \begin{lemma}
-\label{lem:canonicalepi}
-  Suppose $N$ is a normal subgroup of $G$. Then the function 
+%%   \begin{lemma}
+%% \label{lem:canonicalepi}
+%%   Suppose $N$ is a normal subgroup of $G$. Then the function 
+%%   $\pi: G \rightarrow G/N$ defined by $\pi(g) = gN$ is a group epimorphism with
+%%   kernel subgroup $K_\pi = N$. 
+%%   \end{lemma}
+%%   \noindent (Recall, an \emph{epimorphism} is an onto homomorphism.)
+
+%%   \begin{exercise}  Prove Lemma~\ref{lem:canonicalepi}.
+%%   \end{exercise}
+
+  \begin{exercise}
+  Suppose $N$ is a normal subgroup of $G$. Prove that the function 
   $\pi: G \rightarrow G/N$ defined by $\pi(g) = gN$ is a group epimorphism with
   kernel subgroup $K_\pi = N$. 
-  \end{lemma}
-  \noindent (Recall, an \emph{epimorphism} is an onto homomorphism.)
-
-  \begin{exercise}  Prove Lemma~\ref{lem:canonicalepi}.
   \end{exercise}
 
-  
+  \begin{exercise}
+    Prove the First Isomorphism Theorem.
+  \end{exercise}
+
   \begin{theorem}[Second Isomorphism Theorem]
     Let $G$ be a group with subgroups $H$ and $N$, and suppose that $N$ is a
     normal subgroup of $G$. Then 
@@ -1004,8 +1021,134 @@ relation $R$ is denoted by $A/R$. That is,
     \end{enumerate}
   \end{theorem}
 
+  \begin{exercise}
+    Prove the Second Isomorphism Theorem.
+  \end{exercise}
 
- 
+  \begin{exercise}
+    Let $G$ be a nonabelian simple group.  Let $S_n$ be the symmetric group of all
+  permutations on an $n$-element set, and let $A_n$ be the alternating group.
+    \begin{enumerate}
+    \item 
+      Show that if $G$ is a subgroup of $S_n$, $n$ finite, then $G$ is a subgroup
+      of $A_n$.
+    \item Let $H$ be a proper subgroup of $G$, and, for $g\in G$, let $\lambda_g$ be
+      the map of the set of left cosets of $H$ onto themselves defined by
+      $\lambda_g(xH) = gxH$.  
+      Show that the map $g\mapsto \lambda_g$ is a monomorphism (injective
+      homomorphism) of $G$ into the group of permutations of the set of left
+      cosets of $H$. 
+    \item Let $H$ be a subgroup of $G$ of finite index $n$  and assume $n>1$ (so $H \neq G$).  
+      Show that $G$ can be embedded in $A_n$. (That is, show that $G$ is
+      isomorphic to a subgroup of $A_n$.
+    \item If $G$ is infinite, it has no proper subgroup of finite index.
+    \end{enumerate}
+  \end{exercise}
+
+
+
+  \ifthenelse{\boolean{includeSolutions}}{
+    \begin{solution}
+      {\bf a.} Suppose $G$ is a subgroup of $S_n$, $n$ finite, and 
+      assume $G$ is nonabelian and simple.  Clearly $G \neq S_n$, since $S_n$ is not simple
+      (for example, $A_n \subnormal S_n$).
+      Consider $G\cap A_n$. This is easily seen to be a normal subgroup of $G$.  
+      (Normality: if $\sigma \in G\cap A_n$ and $g\in G$, then $g\sigma g^{-1}\in G$ and
+      $g\sigma g^{-1}\in A_n$, since $A_n \subnormal S_n$, so $g\sigma g^{-1}\in G \cap
+      A_n$.)  Therefore, as $G$ is simple, either $G\cap A_n = (e)$ or $G\cap A_n = G$.  
+      In fact, $G\cap A_n = (e)$ never occurs under the given hypotheses, and two proofs of
+      this fact are given below.  In case $G\cap A_n = G$, of course, $G\leq A_n$ and we are done.
+
+      {\it Proof 1:} Suppose $G\cap A_n = (e)$.  Then $G$ contains only $e$ and odd
+      permutations.  
+      Let $\zeta\in G$ be an odd permutation.  Then $\zeta^2$ is an even permutation in $G$, so it must
+      be $e$.  Thus, every nonidentity element of $G$ has order 2.  Suppose $\eta$ is
+      another odd permutation in $G$. Then $\zeta \eta$ is an even permutation in $G$, so
+      $\zeta \eta = e$.  Therefore, $\zeta \zeta = e = \zeta \eta$, so $\eta = \zeta$.
+      This shows $G$ has only two elements $e$ and $\zeta$.  But then $G\cong \Z_2$ is abelian,
+      contradicting our hypothesis. 
+
+      {\it Proof 2:} 
+      If $G$ were not a subgroup of $A_n$, then the group
+      $G A_n\leq S_n$ would have order larger than $|A_n| = |S_n|/2$. 
+      By Lagrange's theorem, then, it would have order
+      $|S_n|$.  Therefore, $G A_n = S_n$, and, by the 
+      second isomorphism theorem,
+      \[
+      G/(G\cap A_n) \cong G A_n/A_n = S_n/A_n.
+      \]
+      This rules out $G\cap A_n = (e)$, since that would give $G \cong S_n/A_n
+      \cong \Z_2$ (abelian), contradicting the hypothesis.
+      \qed
+      ~\\
+      {\bf Remark:}  Although the first proof above is completely elementary, the second is worth
+      noting since it reveals useful information even when we don't assume $G$ is
+      simple and nonabelian.  For example (Rose \citeRose, page 77), 
+      if $G$ is a subgroup of $S_n$ containing an odd permutation, then we can show that
+      exactly half of the elements of $G$ are even and half are odd.  Indeed, under these conditions
+      we easily get that $G A_n = S_n$ (as in the second proof above), and then the second isomorphism
+      theorem implies $|G/(G\cap A_n)| =|S_n/A_n|=2$. Therefore, $|G\cap A_n| =|G|/2$,
+      which says that half the elements of $G$ belong to $A_n$, as claimed. 
+      \\[12pt]
+      {\bf b.} Let $H\lneq G$, and let $S$ denote the set of left cosets of $G$.  Let
+      $\Sym(S)$ denote the group of permutations of $S$.  Then the map $\lambda: G\rightarrow
+      \Sym(S)$ -- defined by $\lambda(g) = \lambda_g$, where $\lambda_g(xH) = gxH$ -- is a
+      monomorphism of $G$ into $\Sym(S)$.  To prove this, we first show that $\lambda(g) =
+      \lambda_g$ is indeed a bijection of $S$, then we show that $\lambda$ is a
+      homomorphism of $G$, and finally we show that $\ker \lambda$ is $(e)$.
+
+      To see that $\lambda_g$ is injective, observe
+      \[
+      \lambda_g(xH) = \lambda_g(yH) 
+      \quad \Leftrightarrow \quad 
+      gxH = gyH
+      \quad \Leftrightarrow \quad 
+      (gy)^{-1}gx \in H
+      \quad \Leftrightarrow \quad 
+      y^{-1}x \in H
+      \quad \Leftrightarrow \quad 
+      xH = yH.
+      \]
+
+      To see that $\lambda_g$ is surjective, fix $xH\in S$, and notice that
+      $\lambda_g(g^{-1}xH) = gg^{-1}xH = xH$.
+
+      To see that $\lambda$ is a homomorphism, note that, for any $xH \in S$,
+      \[
+      \lambda_{g_1 g_2}(xH) = g_1g_2 xH = \lambda_{g_1}(g_2 x H) = 
+      \lambda_{g_1}\circ \lambda_{g_2}( x H).
+      \]
+      That is, $\lambda(g_1 g_2) = \lambda(g_1)\lambda(g_2)$, which proves that $\lambda$
+      is a homomorphism.
+
+      Finally, note that $\ker \lambda$ is a normal subgroup of $G$.  Therefore, as $G$ is simple,
+      either $\ker \lambda = (e)$, or $\ker \lambda = G$.  But
+      \[
+      \ker \lambda = \{g\in G: \forall x\in G, \lambda_g(xH) = xH\} = 
+      \{g\in G: \forall x\in G, x^{-1}g x \in H\} \leq H
+      \]
+      (since $e\in G$).  Therefore, $H\neq G$, so $\ker \lambda \neq G$, so 
+      $\ker \lambda =(e)$.  This proves that $\lambda$ is a monomorphism.
+      \qed
+      ~\\[4pt]
+      {\bf c.} Let $H$ be a subgroup of $G$ of finite index $n$ and assume $n>1$ (so $H
+      \neq G$).  We must show that $G$ can be embedded into $A_n$.
+
+      Part {\bf b.}~showed that $\lambda$ embeds $G$ into $\Sym(S)$, where $S$ is the set
+      of left cosets of $H$ in $G$.  Now $[G:H] = |S| = n$, which implies
+      that $\Sym(S) \cong S_n$, the group of permutations of $n$ elements.  Therefore,
+      $G$ is isomorphic to a subgroup of $S_n$.  By part {\bf a.}, then, $G$ is isomorphic
+      to a subgroup of $A_n$. \qed
+      ~\\[4pt]
+      {\bf d.} Suppose $G$ is infinite.  We must show it has no proper subgroup of finite
+      index.  If, on the contrary, $H\leq G$ with $[G:H] = n$, then, $G$ would be isomorphic
+      to a subgroup of the finite group $A_n$. Impossible. \qed
+     \end{solution}
+}
+
+
+
+
 \begin{theorem}[Correspondence Theorem]\label{CorrespondTheorem}\index{Correspondence Theorem!for groups}
 Let $N$ be a normal subgroup of a group $G$. Then the map
 $H \mapsto H/N$
