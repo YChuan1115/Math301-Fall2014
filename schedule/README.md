@@ -75,9 +75,9 @@ W 11/12: **Midterm Exam 2** (focus: Ch 6, 9--11, 19)
 F 11/14: (Ch 11) correspondence theorem  
 
 ---------------------------------------------------------
-M 11/17: (Ch 14) group actions: orbits, stabilizers  
-W 11/19: (Ch 14) group actions: class equation, Burnside's Theorem
-F 11/21: (Ch 16) introducing rings 
+M 11/17: (Ch 14) group actions: examples  
+W 11/19: (Ch 14) group actions: orbits, stabilizers  
+F 11/21: Review of isomorphism theorems
 
 ---------------------------------------------------------
 M-F 11/24-28: no class (Thanksgiving break)   
@@ -86,12 +86,12 @@ M-F 11/24-28: no class (Thanksgiving break)
 
 ## December
 
-M 12/1: (Ch 16) introducing rings  
-W 12/3: (Ch 16) integral domains, fields  
-F 12/5: (Ch 16) ring homomorphisms
+M 12/1: Review isomorphism and correspondence theorems with examples  
+W 12/3: (Ch 14) Group actions: the class equation  
+F 12/5: (Ch 16) introducing rings  
 
 ---------------------------------------------------------
-M 12/8: (Ch 16) ideals  
+M 12/8: (Ch 16) ideals, ring homomorphisms  
 W 12/10: (Ch 16) maximal and prime ideals  
 F 12/12: Review for final exam  
 
