@@ -50,7 +50,7 @@ not set in bold font are recommended but not required.
 11. **Chapter 11: 7, 11, 17, 18, 19**  
 	**Due: Friday, 11/21**  
 
-12. **Solve Exercises 1--7 of GeneralAlgebraNotes.pdf**  
+12. Solve Exercises 1--7 of GeneralAlgebraNotes.pdf  
     **Turn in solutions to Exercises 5 and 7**  
 	**Due: Wednesday, 12/3**
 
