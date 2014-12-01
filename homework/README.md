@@ -48,6 +48,11 @@ not set in bold font are recommended but not required.
    **Due: Wednesday, 11/05**
 
 11. **Chapter 11: 7, 11, 17, 18, 19**  
-	**Due: Friday, 11/21**
+	**Due: Friday, 11/21**  
+
+12. **Make sure you know how to solve Problems 1--7 of GeneralAlgebraNotes.pdf**
+  
+**Turn in solutions to Problems 5 and 7**  
+	**Due: Wednesday, 12/3**
 
 
