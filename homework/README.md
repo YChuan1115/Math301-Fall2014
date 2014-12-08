@@ -54,7 +54,7 @@ not set in bold font are recommended but not required.
     **Turn in solutions to Exercises 5 and 7**  
 	**Due: Wednesday, 12/3**
 
-13. **Chapter 14: 1 (Ex.~2--5), 2, 3, 9, 11 (justify the formula).**  
+13. **Chapter 14: 1, 2, 3, 9, 11 (justify the formula).**  
     **Due: Friday, 12/12**
 
 
